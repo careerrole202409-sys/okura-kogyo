@@ -1,12 +1,17 @@
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { products } from '../data/products';
 import ProductCard from '../components/ProductCard';
+import { asLang } from '../i18n/lang';
 
 export default function CategoryPage() {
+  const { t, i18n } = useTranslation();
+  const lang = asLang(i18n.language);
+
   useEffect(() => {
-    document.title = '食品包装用シュリンクフィルム - 製品情報 | 大倉工業株式会社';
-    document.body.className = 'archive tax-products_cat term-display-film term-48 ja';
-  }, []);
+    document.title = `${t('category.title')} - ${t('common.products')} | 大倉工業株式会社`;
+    document.body.className = `archive tax-products_cat term-display-film term-48 ${lang}`;
+  }, [t, lang]);
 
   return (
     <main className="m-body products">
@@ -14,7 +19,7 @@ export default function CategoryPage() {
         <div className="inner">
           <p className="ttl">
             <a href="https://www.okr-ind.co.jp/products/" className="link-hdr">
-              <span className="l-bl-all">製品情報</span>
+              <span className="l-bl-all">{t('common.products')}</span>
               <span className="l-bl-all en"> PRODUCTS</span>
             </a>
           </p>
@@ -25,14 +30,14 @@ export default function CategoryPage() {
         <div className="s-bg-bgry-pc l-mb1-sp">
           <div className="l-flex-sp-ms0">
             <ul className="m-idx-products-cat m-hidden-v">
-              <li className="list"><a className="link industry-car" href="https://www.okr-ind.co.jp/products/use/industry-car/"><img className="img" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/icon-industry-car-s.png" alt="産業・自動車" /><span className="ttl">産業・自動車</span></a></li>
-              <li className="list"><a className="link food current" href="https://www.okr-ind.co.jp/products/use/food/"><img className="img" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/icon-food-sanitary-s.png" alt="食品" /><span className="ttl">食品</span></a></li>
-              <li className="list"><a className="link medical-drug" href="https://www.okr-ind.co.jp/products/use/medical-drug/"><img className="img" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/icon-medical-drug-s.png" alt="医療・医薬" /><span className="ttl">医療・医薬</span></a></li>
-              <li className="list"><a className="link packaging" href="https://www.okr-ind.co.jp/products/use/packaging/"><img className="img" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/icon-packaging-s.png" alt="一般包装" /><span className="ttl">一般包装</span></a></li>
-              <li className="list"><a className="link optical-electronics" href="https://www.okr-ind.co.jp/products/use/optical-electronics/"><img className="img" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/icon-optical-electronics-s.png" alt="光学・情報電子" /><span className="ttl">光学・情報電子</span></a></li>
-              <li className="list"><a className="link architecture" href="https://www.okr-ind.co.jp/products/use/architecture/"><img className="img" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/icon-architecture-s.png" alt="建築" /><span className="ttl">建築</span></a></li>
-              <li className="list"><a className="link agriculture" href="https://www.okr-ind.co.jp/products/use/agriculture/"><img className="img" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/icon-agriculture-s.png" alt="農業" /><span className="ttl">農業</span></a></li>
-              <li className="list"><a className="link other" href="https://www.okr-ind.co.jp/products/use/other/"><img className="img" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/icon-livingware.png" alt="生活用品" /><span className="ttl">生活用品</span></a></li>
+              <li className="list"><a className="link industry-car" href="https://www.okr-ind.co.jp/products/use/industry-car/"><img className="img" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/icon-industry-car-s.png" alt={t('header.productsItems.industryCar')} /><span className="ttl">{t('header.productsItems.industryCar')}</span></a></li>
+              <li className="list"><a className="link food current" href="https://www.okr-ind.co.jp/products/use/food/"><img className="img" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/icon-food-sanitary-s.png" alt={t('header.productsItems.food')} /><span className="ttl">{t('header.productsItems.food')}</span></a></li>
+              <li className="list"><a className="link medical-drug" href="https://www.okr-ind.co.jp/products/use/medical-drug/"><img className="img" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/icon-medical-drug-s.png" alt={t('header.productsItems.medicalDrug')} /><span className="ttl">{t('header.productsItems.medicalDrug')}</span></a></li>
+              <li className="list"><a className="link packaging" href="https://www.okr-ind.co.jp/products/use/packaging/"><img className="img" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/icon-packaging-s.png" alt={t('header.productsItems.packaging')} /><span className="ttl">{t('header.productsItems.packaging')}</span></a></li>
+              <li className="list"><a className="link optical-electronics" href="https://www.okr-ind.co.jp/products/use/optical-electronics/"><img className="img" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/icon-optical-electronics-s.png" alt={t('header.productsItems.opticalElectronics')} /><span className="ttl">{t('header.productsItems.opticalElectronics')}</span></a></li>
+              <li className="list"><a className="link architecture" href="https://www.okr-ind.co.jp/products/use/architecture/"><img className="img" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/icon-architecture-s.png" alt={t('header.productsItems.architecture')} /><span className="ttl">{t('header.productsItems.architecture')}</span></a></li>
+              <li className="list"><a className="link agriculture" href="https://www.okr-ind.co.jp/products/use/agriculture/"><img className="img" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/icon-agriculture-s.png" alt={t('header.productsItems.agriculture')} /><span className="ttl">{t('header.productsItems.agriculture')}</span></a></li>
+              <li className="list"><a className="link other" href="https://www.okr-ind.co.jp/products/use/other/"><img className="img" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/icon-livingware.png" alt={t('header.productsItems.other')} /><span className="ttl">{t('header.productsItems.other')}</span></a></li>
             </ul>
           </div>
         </div>
@@ -40,10 +45,10 @@ export default function CategoryPage() {
         <div className="l-flex">
           <div className="m-breadcrumb m-hidden-v">
             <ul className="inner-breadcrumb">
-              <li className="list-breadcrumb"><a className="link-breadcrumb" href="https://www.okr-ind.co.jp/">ホーム</a></li>
-              <li className="list-breadcrumb">製品情報</li>
-              <li className="list-breadcrumb"><a className="link-breadcrumb" href="https://www.okr-ind.co.jp/products/use/food/">食品</a></li>
-              <li className="list-breadcrumb">食品包装用シュリンクフィルム</li>
+              <li className="list-breadcrumb"><a className="link-breadcrumb" href="https://www.okr-ind.co.jp/">{t('common.home')}</a></li>
+              <li className="list-breadcrumb">{t('common.products')}</li>
+              <li className="list-breadcrumb"><a className="link-breadcrumb" href="https://www.okr-ind.co.jp/products/use/food/">{t('category.food')}</a></li>
+              <li className="list-breadcrumb">{t('category.title')}</li>
             </ul>
           </div>
         </div>
@@ -52,16 +57,16 @@ export default function CategoryPage() {
           <aside className="l-sub l-float-r l-ms-var-sp">
             <aside className="m-dropdown m-dropdown-side m-side">
               <ul className="m-nav-side">
-                <li className="list l-only-pc"><a href="https://www.okr-ind.co.jp/products/" className="link parent">製品情報</a></li>
+                <li className="list l-only-pc"><a href="https://www.okr-ind.co.jp/products/" className="link parent">{t('common.products')}</a></li>
                 <li className="drop">
-                  <span className="inner-ttl">食品</span>
+                  <span className="inner-ttl">{t('category.food')}</span>
                   <ul className="body">
-                    <li className="list"><a className="link food-film" href="https://www.okr-ind.co.jp/products/use/food-film/">トレイ食品用フィルム</a></li>
-                    <li className="list"><a className="link meet-film" href="https://www.okr-ind.co.jp/products/use/meet-film/">畜肉包装用フィルム</a></li>
-                    <li className="list"><a className="link display-film current" href="/products/use/display-film/">食品包装用シュリンクフィルム</a></li>
-                    <li className="list"><a className="link liquid-film" href="https://www.okr-ind.co.jp/products/use/liquid-film/">液体充填用フィルム</a></li>
-                    <li className="list"><a className="link food-laminate-film" href="https://www.okr-ind.co.jp/products/use/food-laminate-film/">食品用ラミネートフィルム</a></li>
-                    <li className="list"><a className="link transport-film" href="https://www.okr-ind.co.jp/products/use/transport-film/">業務用輸送フィルム</a></li>
+                    <li className="list"><a className="link food-film" href="https://www.okr-ind.co.jp/products/use/food-film/">{t('category.sidebarItems.foodFilm')}</a></li>
+                    <li className="list"><a className="link meet-film" href="https://www.okr-ind.co.jp/products/use/meet-film/">{t('category.sidebarItems.meetFilm')}</a></li>
+                    <li className="list"><a className="link display-film current" href="/products/use/display-film/">{t('category.sidebarItems.displayFilm')}</a></li>
+                    <li className="list"><a className="link liquid-film" href="https://www.okr-ind.co.jp/products/use/liquid-film/">{t('category.sidebarItems.liquidFilm')}</a></li>
+                    <li className="list"><a className="link food-laminate-film" href="https://www.okr-ind.co.jp/products/use/food-laminate-film/">{t('category.sidebarItems.foodLaminateFilm')}</a></li>
+                    <li className="list"><a className="link transport-film" href="https://www.okr-ind.co.jp/products/use/transport-film/">{t('category.sidebarItems.transportFilm')}</a></li>
                   </ul>
                 </li>
               </ul>
@@ -69,7 +74,7 @@ export default function CategoryPage() {
           </aside>
 
           <section className="l-main l-float-l">
-            <h1 className="m-ttl s-bdb l-mb0">食品包装用シュリンクフィルム</h1>
+            <h1 className="m-ttl s-bdb l-mb0">{t('category.title')}</h1>
             <div className="m-idx-products-thumb">
               {products.map((product) => (
                 <ProductCard key={product.id} product={product} />

@@ -1,34 +1,22 @@
 import { useState, useRef, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { asLang } from '../i18n/lang';
 
 const LANGUAGES = [
-  { code: 'ja', label: '日本語', prefix: '' },
-  { code: 'en', label: 'English', prefix: '/en' },
-  { code: 'zh', label: '中文', prefix: '/zh' },
-  { code: 'ko', label: '한국어', prefix: '/ko' },
+  { code: 'ja', label: '日本語' },
+  { code: 'en', label: 'English' },
+  { code: 'zh', label: '中文' },
+  { code: 'ko', label: '한국어' },
 ];
 
-function getCurrentLang(pathname: string) {
-  if (pathname.startsWith('/en/') || pathname === '/en') return 'en';
-  if (pathname.startsWith('/zh/') || pathname === '/zh') return 'zh';
-  if (pathname.startsWith('/ko/') || pathname === '/ko') return 'ko';
-  return 'ja';
-}
-
-function getBasePath(pathname: string) {
-  return pathname.replace(/^\/(en|zh|ko)/, '') || '/';
-}
-
 export default function LanguageSwitcher() {
+  const { i18n } = useTranslation();
   const [open, setOpen] = useState(false);
   const [pos, setPos] = useState({ top: 0, left: 0 });
-  const { pathname } = useLocation();
-  const navigate = useNavigate();
   const buttonRef = useRef<HTMLButtonElement>(null);
 
-  const currentCode = getCurrentLang(pathname);
-  const basePath = getBasePath(pathname);
+  const currentCode = asLang(i18n.language);
   const current = LANGUAGES.find(l => l.code === currentCode)!;
   const others = LANGUAGES.filter(l => l.code !== currentCode);
 
@@ -68,7 +56,7 @@ export default function LanguageSwitcher() {
             <li key={lang.code}>
               <button
                 onClick={() => {
-                  navigate(lang.prefix + basePath);
+                  i18n.changeLanguage(lang.code); // 言語切替＋localStorageへ自動保存
                   setOpen(false);
                 }}
                 style={{

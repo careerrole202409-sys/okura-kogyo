@@ -1,27 +1,33 @@
 import { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { getProductById } from '../data/products';
+import { asLang } from '../i18n/lang';
 
 export default function ProductDetailPage() {
+  const { t, i18n } = useTranslation();
+  const lang = asLang(i18n.language);
   const { id } = useParams<{ id: string }>();
   const product = getProductById(id ?? '');
 
   useEffect(() => {
     if (!product) return;
-    document.title = `${product.name} | 大倉工業株式会社`;
+    document.title = `${product.name[lang]} | 大倉工業株式会社`;
     document.body.className = product.bodyClass;
-  }, [product]);
+  }, [product, lang]);
 
   if (!product) {
     return (
       <main className="m-body products">
         <div className="l-fix" style={{ padding: '4rem 0', textAlign: 'center' }}>
-          <p>製品が見つかりません。</p>
-          <Link to="/products/use/display-film/">一覧に戻る</Link>
+          <p>{t('product.notFound')}</p>
+          <Link to="/products/use/display-film/">{t('product.backToList')}</Link>
         </div>
       </main>
     );
   }
+
+  const features = product.features[lang];
 
   return (
     <main className="m-body products">
@@ -29,7 +35,7 @@ export default function ProductDetailPage() {
         <div className="inner">
           <p className="ttl">
             <a href="https://www.okr-ind.co.jp/products/" className="link-hdr">
-              <span className="l-bl-all">製品情報</span>
+              <span className="l-bl-all">{t('common.products')}</span>
               <span className="l-bl-all en"> PRODUCTS</span>
             </a>
           </p>
@@ -40,9 +46,9 @@ export default function ProductDetailPage() {
         <div className="l-fix">
           <div className="m-breadcrumb m-hidden-v">
             <ul className="inner-breadcrumb">
-              <li className="list-breadcrumb"><a className="link-breadcrumb" href="https://www.okr-ind.co.jp/">ホーム</a></li>
-              <li className="list-breadcrumb"><a className="link-breadcrumb" href="https://www.okr-ind.co.jp/products/">製品情報</a></li>
-              <li className="list-breadcrumb">{product.name}</li>
+              <li className="list-breadcrumb"><a className="link-breadcrumb" href="https://www.okr-ind.co.jp/">{t('common.home')}</a></li>
+              <li className="list-breadcrumb"><a className="link-breadcrumb" href="https://www.okr-ind.co.jp/products/">{t('common.products')}</a></li>
+              <li className="list-breadcrumb">{product.name[lang]}</li>
             </ul>
           </div>
         </div>
@@ -52,8 +58,8 @@ export default function ProductDetailPage() {
             <div className="body">
               <div className="l-float-r cont product">
                 <h1 className="m-ttl no-a">
-                  {product.name}
-                  {product.lead && <span className="lead">{product.lead}</span>}
+                  {product.name[lang]}
+                  {product.lead[lang] && <span className="lead">{product.lead[lang]}</span>}
                 </h1>
               </div>
 
@@ -64,7 +70,7 @@ export default function ProductDetailPage() {
                     height={736}
                     src={product.image}
                     className="attachment-full size-full wp-post-image"
-                    alt={product.name}
+                    alt={product.name[lang]}
                     decoding="async"
                     fetchPriority="high"
                   />
@@ -74,15 +80,15 @@ export default function ProductDetailPage() {
               <div className="cont product">
                 <div
                   className="l-pdb1 s-bdb l-mb2"
-                  dangerouslySetInnerHTML={{ __html: product.descriptionHtml }}
+                  dangerouslySetInnerHTML={{ __html: product.descriptionHtml[lang] }}
                 />
 
-                {product.features.length > 0 && (
+                {features.length > 0 && (
                   <section id="section1" className="m-sect m-cf-cont">
-                    <h2 className="m-subttl">特長</h2>
+                    <h2 className="m-subttl">{t('product.features')}</h2>
                     <div className="cont-cf">
                       <ul>
-                        {product.features.map((f, i) => (
+                        {features.map((f, i) => (
                           <li key={i}>{f}</li>
                         ))}
                       </ul>
@@ -91,37 +97,37 @@ export default function ProductDetailPage() {
                 )}
 
                 <section id="section2" className="m-sect m-cf-cont">
-                  <h2 className="m-subttl">{product.usesLabel}</h2>
+                  <h2 className="m-subttl">{product.usesLabel[lang]}</h2>
                   <div
                     className="cont-cf"
-                    dangerouslySetInnerHTML={{ __html: product.usesHtml }}
+                    dangerouslySetInnerHTML={{ __html: product.usesHtml[lang] }}
                   />
                 </section>
 
                 {product.materialHtml && (
                   <section id="section3" className="m-sect m-cf-cont">
-                    <h2 className="m-subttl">材質</h2>
+                    <h2 className="m-subttl">{t('product.material')}</h2>
                     <div
                       className="cont-cf"
-                      dangerouslySetInnerHTML={{ __html: product.materialHtml }}
+                      dangerouslySetInnerHTML={{ __html: product.materialHtml[lang] }}
                     />
                   </section>
                 )}
 
                 {product.specHtml && (
                   <section id="section4" className="m-sect m-cf-cont">
-                    <h2 className="m-subttl">製品仕様</h2>
+                    <h2 className="m-subttl">{t('product.spec')}</h2>
                     <div
                       className="cont-cf"
-                      dangerouslySetInnerHTML={{ __html: product.specHtml }}
+                      dangerouslySetInnerHTML={{ __html: product.specHtml[lang] }}
                     />
                   </section>
                 )}
 
-                {product.pdfUrl && (
+                {product.pdfUrl && product.pdfLabel && (
                   <p className="m-btn-slide-x round pdf">
                     <a href={product.pdfUrl} target="_blank" rel="noreferrer" className="link">
-                      <span>{product.pdfLabel}</span>
+                      <span>{product.pdfLabel[lang]}</span>
                     </a>
                   </p>
                 )}
@@ -134,18 +140,18 @@ export default function ProductDetailPage() {
           <div className="l-fix">
             <div className="m-division">
               <div className="body">
-                <h5 className="ttl">この製品に関するお問い合わせはコチラ</h5>
+                <h5 className="ttl">{t('product.contactHeading')}</h5>
                 <p className="info l-mb1">
-                  <span className="subttl">大倉工業株式会社 合成樹脂事業部</span>
+                  <span className="subttl">{t('product.contactDept')}</span>
                   <span className="num">Tel: 0877-56-1150</span>
-                  <span>受付時間: 9:00-17:00 (平日のみ)</span>
+                  <span>{t('product.contactHours')}</span>
                 </p>
                 <p className="m-btn-slide-x mid round fill full">
                   <a
                     href={`https://www.okr-ind.co.jp/contact/plastic-film-c/?item=${product.contactItem}`}
                     className="link"
                   >
-                    <span className="t-les1">メールフォームはコチラ</span>
+                    <span className="t-les1">{t('product.mailForm')}</span>
                   </a>
                 </p>
               </div>
@@ -159,9 +165,9 @@ export default function ProductDetailPage() {
               href={`https://www.okr-ind.co.jp/contact/plastic-film-c/?item=${product.contactItem}`}
               className="link-contact"
             >
-              お問い合わせ：0877-56-1150（代表）<br />
-              電話受付時間：9:00〜17:00<br className="for-small" />
-              （土日・祝日・その他会社の休日を除く）
+              {t('product.bottomContactLine1')}<br />
+              {t('product.bottomContactLine2')}<br className="for-small" />
+              {t('product.bottomContactLine3')}
             </a>
           </p>
         </div>
