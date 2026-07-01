@@ -1,8 +1,13 @@
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
+import { asLang } from '../i18n/lang';
+
+// テーマCSSが言語別ナビ調整に使うクラス（英語=en-US, 中国語=zh-CN）に合わせる
+const GNAV_LANG_CLASS: Record<string, string> = { en: 'en-US', zh: 'zh-CN', ko: 'ko' };
 
 export default function Header() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const gnavLangClass = GNAV_LANG_CLASS[asLang(i18n.language)] ?? '';
   return (
     <header className="m-hdr">
       <div className="logo en">
@@ -19,7 +24,7 @@ export default function Header() {
       <nav className="control-cont">
         <div className="m-nav-toggle">
           <div className="m-dropdown m-dropdown-gnav">
-            <ul className="inner-hdr m-gnav">
+            <ul className={`inner-hdr m-gnav ${gnavLangClass}`.trim()}>
               <li data-role="drop" className="list drop">
                 <a href="https://www.okr-ind.co.jp/" data-role="drop" className="link-g inner-ttl">{t('header.home')}</a>
               </li>
@@ -104,17 +109,19 @@ export default function Header() {
             </ul>
           </div>
           <div className="inner-hdr l-por">
-            <nav className="langnav">
-              <LanguageSwitcher />
-            </nav>
             <ul className="m-subnav login"></ul>
-            <ul className="m-subnav">
-              <li className="list"><a href="https://www.okr-ind.co.jp/news/" className="link">{t('header.subnav.news')}</a></li>
-              <li className="list"><a href="https://www.okr-ind.co.jp/catalog/" className="link">{t('header.subnav.catalog')}</a></li>
-              <li className="list"><a href="https://www.okr-ind.co.jp/link/" className="link" target="_blank" rel="noreferrer">{t('header.subnav.dedicated')}</a></li>
-              <li className="list"><a href="https://www.okr-ind.co.jp/recruit/" className="link" target="_blank" rel="noreferrer">{t('header.subnav.recruit')}</a></li>
-              <li className="list search"><span className="link"><i></i></span></li>
-            </ul>
+            <div className="hdr-right-group">
+              <nav className="langnav">
+                <LanguageSwitcher />
+              </nav>
+              <ul className="m-subnav">
+                <li className="list"><a href="https://www.okr-ind.co.jp/news/" className="link">{t('header.subnav.news')}</a></li>
+                <li className="list"><a href="https://www.okr-ind.co.jp/catalog/" className="link">{t('header.subnav.catalog')}</a></li>
+                <li className="list"><a href="https://www.okr-ind.co.jp/link/" className="link" target="_blank" rel="noreferrer">{t('header.subnav.dedicated')}</a></li>
+                <li className="list"><a href="https://www.okr-ind.co.jp/recruit/" className="link" target="_blank" rel="noreferrer">{t('header.subnav.recruit')}</a></li>
+                <li className="list search"><span className="link"><i></i></span></li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className="m-search">

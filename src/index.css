@@ -15,3 +15,34 @@ body {
 .m-dropdown-side {
   visibility: visible;
 }
+
+/* 言語切り替えナビを右のサブナビと隣接させる（テーマの絶対配置 right:424px を上書き） */
+@media screen and (min-width: 737px) {
+  .inner-hdr.l-por .hdr-right-group {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    z-index: 13;
+  }
+  .hdr-right-group .langnav {
+    position: static;
+    right: auto;
+  }
+  .hdr-right-group .m-subnav {
+    position: static;
+  }
+
+  /* 英語/中国語/韓国語はラベルが長く固定幅列(11.11%)で2行折り返し→ヘッダーに隠れるのを防ぐ。
+     1行に収め、余白・字間を詰めて列内に収める（日本語は影響なし）。 */
+  .m-gnav.en-US .link-g,
+  .m-gnav.zh-CN .link-g,
+  .m-gnav.ko .link-g {
+    white-space: nowrap;
+    font-size: 13px;
+    letter-spacing: 0;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+}

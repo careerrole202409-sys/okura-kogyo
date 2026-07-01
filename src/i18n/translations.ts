@@ -176,7 +176,7 @@ export const translations = {
         data: 'Financial / Non-Financial Data',
         report: 'Integrated Report / Sustainability Report',
       },
-      ad: 'Corporate Advertising',
+      ad: 'Advertising',
       topics: 'Topics',
       contact: 'Contact',
       subnav: {
