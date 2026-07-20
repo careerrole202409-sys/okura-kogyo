@@ -9,21 +9,24 @@ interface Props {
   category: CategoryDef;
 }
 
-// 食品カテゴリのサイドバー項目。display-film / food-film はサイト内ルート、
-// それ以外は本家サイトへの外部リンク。
-const SIDEBAR_ITEMS: Array<{ slug: string; key: string; internal?: boolean; href?: string }> = [
-  { slug: 'food-film', key: 'category.sidebarItems.foodFilm', internal: true },
-  { slug: 'meet-film', key: 'category.sidebarItems.meetFilm', href: 'https://www.okr-ind.co.jp/products/use/meet-film/' },
-  { slug: 'display-film', key: 'category.sidebarItems.displayFilm', internal: true },
-  { slug: 'liquid-film', key: 'category.sidebarItems.liquidFilm', href: 'https://www.okr-ind.co.jp/products/use/liquid-film/' },
-  { slug: 'food-laminate-film', key: 'category.sidebarItems.foodLaminateFilm', href: 'https://www.okr-ind.co.jp/products/use/food-laminate-film/' },
-  { slug: 'transport-film', key: 'category.sidebarItems.transportFilm', href: 'https://www.okr-ind.co.jp/products/use/transport-film/' },
+// 上部の8カテゴリアイコン（固定）。current はジャンル（category.genre.iconSlug）で決まる。
+const CATEGORY_ICONS: Array<{ slug: string; icon: string; key: string }> = [
+  { slug: 'industry-car', icon: 'icon-industry-car-s.png', key: 'header.productsItems.industryCar' },
+  { slug: 'food', icon: 'icon-food-sanitary-s.png', key: 'header.productsItems.food' },
+  { slug: 'medical-drug', icon: 'icon-medical-drug-s.png', key: 'header.productsItems.medicalDrug' },
+  { slug: 'packaging', icon: 'icon-packaging-s.png', key: 'header.productsItems.packaging' },
+  { slug: 'optical-electronics', icon: 'icon-optical-electronics-s.png', key: 'header.productsItems.opticalElectronics' },
+  { slug: 'architecture', icon: 'icon-architecture-s.png', key: 'header.productsItems.architecture' },
+  { slug: 'agriculture', icon: 'icon-agriculture-s.png', key: 'header.productsItems.agriculture' },
+  { slug: 'other', icon: 'icon-livingware.png', key: 'header.productsItems.other' },
 ];
 
 export default function CategoryPage({ category }: Props) {
   const { t, i18n } = useTranslation();
   const lang = asLang(i18n.language);
   const title = t(category.titleKey);
+  const genre = category.genre;
+  const genreLabel = t(genre.labelKey);
 
   useEffect(() => {
     document.title = `${title} - ${t('common.products')} | 大倉工業株式会社`;
@@ -47,14 +50,18 @@ export default function CategoryPage({ category }: Props) {
         <div className="s-bg-bgry-pc l-mb1-sp">
           <div className="l-flex-sp-ms0">
             <ul className="m-idx-products-cat m-hidden-v">
-              <li className="list"><a className="link industry-car" href="https://www.okr-ind.co.jp/products/use/industry-car/"><img className="img" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/icon-industry-car-s.png" alt={t('header.productsItems.industryCar')} /><span className="ttl">{t('header.productsItems.industryCar')}</span></a></li>
-              <li className="list"><a className="link food current" href="https://www.okr-ind.co.jp/products/use/food/"><img className="img" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/icon-food-sanitary-s.png" alt={t('header.productsItems.food')} /><span className="ttl">{t('header.productsItems.food')}</span></a></li>
-              <li className="list"><a className="link medical-drug" href="https://www.okr-ind.co.jp/products/use/medical-drug/"><img className="img" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/icon-medical-drug-s.png" alt={t('header.productsItems.medicalDrug')} /><span className="ttl">{t('header.productsItems.medicalDrug')}</span></a></li>
-              <li className="list"><a className="link packaging" href="https://www.okr-ind.co.jp/products/use/packaging/"><img className="img" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/icon-packaging-s.png" alt={t('header.productsItems.packaging')} /><span className="ttl">{t('header.productsItems.packaging')}</span></a></li>
-              <li className="list"><a className="link optical-electronics" href="https://www.okr-ind.co.jp/products/use/optical-electronics/"><img className="img" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/icon-optical-electronics-s.png" alt={t('header.productsItems.opticalElectronics')} /><span className="ttl">{t('header.productsItems.opticalElectronics')}</span></a></li>
-              <li className="list"><a className="link architecture" href="https://www.okr-ind.co.jp/products/use/architecture/"><img className="img" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/icon-architecture-s.png" alt={t('header.productsItems.architecture')} /><span className="ttl">{t('header.productsItems.architecture')}</span></a></li>
-              <li className="list"><a className="link agriculture" href="https://www.okr-ind.co.jp/products/use/agriculture/"><img className="img" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/icon-agriculture-s.png" alt={t('header.productsItems.agriculture')} /><span className="ttl">{t('header.productsItems.agriculture')}</span></a></li>
-              <li className="list"><a className="link other" href="https://www.okr-ind.co.jp/products/use/other/"><img className="img" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/icon-livingware.png" alt={t('header.productsItems.other')} /><span className="ttl">{t('header.productsItems.other')}</span></a></li>
+              {CATEGORY_ICONS.map((c) => {
+                const active = c.slug === genre.iconSlug;
+                const label = t(c.key);
+                return (
+                  <li className="list" key={c.slug}>
+                    <a className={`link ${c.slug}${active ? ' current' : ''}`} href={`https://www.okr-ind.co.jp/products/use/${c.slug}/`}>
+                      <img className="img" src={`https://www.okr-ind.co.jp/wp/wp-content/uploads/${c.icon}`} alt={label} />
+                      <span className="ttl">{label}</span>
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
@@ -64,7 +71,7 @@ export default function CategoryPage({ category }: Props) {
             <ul className="inner-breadcrumb">
               <li className="list-breadcrumb"><a className="link-breadcrumb" href="https://www.okr-ind.co.jp/">{t('common.home')}</a></li>
               <li className="list-breadcrumb">{t('common.products')}</li>
-              <li className="list-breadcrumb"><a className="link-breadcrumb" href="https://www.okr-ind.co.jp/products/use/food/">{t('category.food')}</a></li>
+              <li className="list-breadcrumb"><a className="link-breadcrumb" href={genre.href}>{genreLabel}</a></li>
               <li className="list-breadcrumb">{title}</li>
             </ul>
           </div>
@@ -76,9 +83,9 @@ export default function CategoryPage({ category }: Props) {
               <ul className="m-nav-side">
                 <li className="list l-only-pc"><a href="https://www.okr-ind.co.jp/products/" className="link parent">{t('common.products')}</a></li>
                 <li className="drop">
-                  <span className="inner-ttl">{t('category.food')}</span>
+                  <span className="inner-ttl">{genreLabel}</span>
                   <ul className="body">
-                    {SIDEBAR_ITEMS.map((item) => {
+                    {genre.sidebarItems.map((item) => {
                       const active = item.slug === category.slug;
                       const className = `link ${item.slug}${active ? ' current' : ''}`;
                       return (

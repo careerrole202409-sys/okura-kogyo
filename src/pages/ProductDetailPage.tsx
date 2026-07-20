@@ -84,6 +84,18 @@ export default function ProductDetailPage() {
                     dangerouslySetInnerHTML={{ __html: product.descriptionHtml[lang] }}
                   />
                 )}
+              </div>
+
+              <div className="cont full product">
+                {product.sections?.map((section, i) => (
+                  <section key={i} id={`section${i + 1}`} className="m-sect m-cf-cont">
+                    <h2 className="m-subttl">{section.label[lang]}</h2>
+                    <div
+                      className="cont-cf"
+                      dangerouslySetInnerHTML={{ __html: section.html[lang] }}
+                    />
+                  </section>
+                ))}
 
                 {features.length > 0 && (
                   <section id="section1" className="m-sect m-cf-cont">

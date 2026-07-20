@@ -2,7 +2,13 @@ import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom'
 import Layout from './components/Layout';
 import CategoryPage from './pages/CategoryPage';
 import ProductDetailPage from './pages/ProductDetailPage';
-import { displayFilmCategory, foodFilmCategory } from './data/categories';
+import {
+  displayFilmCategory,
+  foodFilmCategory,
+  liquidFilmCategory,
+  selfAdhesiveProtectionCategory,
+  carCategory,
+} from './data/categories';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +26,18 @@ const router = createBrowserRouter([
       {
         path: 'products/use/food-film/',
         element: <CategoryPage category={foodFilmCategory} />,
+      },
+      {
+        path: 'products/use/liquid-film/',
+        element: <CategoryPage category={liquidFilmCategory} />,
+      },
+      {
+        path: 'products/use/self-adhesive-protection/',
+        element: <CategoryPage category={selfAdhesiveProtectionCategory} />,
+      },
+      {
+        path: 'products/use/car/',
+        element: <CategoryPage category={carCategory} />,
       },
       {
         path: 'products/:id/',
