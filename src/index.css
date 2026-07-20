@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'fontello';
-  src: url('/fonts/fontello.woff2') format('woff2'),
-       url('/fonts/fontello.woff') format('woff'),
-       url('/fonts/fontello.ttf') format('truetype');
+  src: url('https://www.okr-ind.co.jp/wp/wp-content/themes/okr-ind/fonts/fontello.woff2') format('woff2'),
+       url('https://www.okr-ind.co.jp/wp/wp-content/themes/okr-ind/fonts/fontello.woff') format('woff'),
+       url('https://www.okr-ind.co.jp/wp/wp-content/themes/okr-ind/fonts/fontello.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
