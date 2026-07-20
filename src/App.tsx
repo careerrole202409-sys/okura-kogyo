@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom'
 import Layout from './components/Layout';
 import CategoryPage from './pages/CategoryPage';
 import ProductDetailPage from './pages/ProductDetailPage';
+import { displayFilmCategory, foodFilmCategory } from './data/categories';
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,11 @@ const router = createBrowserRouter([
       },
       {
         path: 'products/use/display-film/',
-        element: <CategoryPage />,
+        element: <CategoryPage category={displayFilmCategory} />,
+      },
+      {
+        path: 'products/use/food-film/',
+        element: <CategoryPage category={foodFilmCategory} />,
       },
       {
         path: 'products/:id/',

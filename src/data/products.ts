@@ -1,6 +1,6 @@
 import type { Product } from '../types/product';
 
-export const products: Product[] = [
+export const displayFilmProducts: Product[] = [
   {
     id: '484',
     image: 'https://www.okr-ind.co.jp/wp/wp-content/uploads/8058bb29b2530cada86e7bd87137a664.png',
@@ -697,6 +697,226 @@ Like our widely favored "VANGUARD™," "LAPLOR™," and "パワーシュリン�
   },
 ];
 
+// トレイ食品用フィルム（/products/use/food-film/）掲載商品
+export const foodFilmProducts: Product[] = [
+  {
+    id: '485',
+    image: 'https://www.okr-ind.co.jp/wp/wp-content/uploads/bf6244da2ae0b8df5d665baeef212f8e-1.jpg',
+    thumbnailImage: 'https://www.okr-ind.co.jp/wp/wp-content/uploads/bf6244da2ae0b8df5d665baeef212f8e-1-736x736.jpg',
+    postClass: 'post-485 products type-products status-publish has-post-thumbnail products_cat-food products_cat-food-film products_division-plastic-film products_division-packaging-bu ja',
+    bodyClass: 'products-template-default single single-products postid-485 ja',
+    contactItem: '485',
+    name: {
+      ja: 'エコラップ®SS',
+      en: 'VANGUARD™ SS',
+      zh: 'VANGUARD™ SS',
+      ko: 'VANGUARD™ SS',
+    },
+    lead: {
+      ja: '食品トレイ包装用ストレッチシュリンクフィルム',
+      en: 'Stretch shrink film for food tray packaging',
+      zh: '食品托盘包装用拉伸收缩薄膜',
+      ko: '식품 트레이 포장용 스트레치 수축 필름',
+    },
+    excerptText: {
+      ja: 'エコラップⓇＳＳは、食品トレイ包装用に開発したポリオレフィン系ストレッチシュリンクフィルムです。\n包装物の積み重ねや指圧による凹み跡の復元性...',
+      en: 'VANGUARD™ SS is a polyolefin-based stretch shrink film developed for food tray packaging, offering recovery from dents caused by stacking or finger pressure...',
+      zh: 'VANGUARD™ SS是为食品托盘包装开发的聚烯烃系拉伸收缩薄膜，具备对堆叠或指压造成的凹陷痕迹的复原性...',
+      ko: 'VANGUARD™ SS는 식품 트레이 포장용으로 개발한 폴리올레핀계 스트레치 수축 필름으로, 포장물의 적재나 손가락 압력에 의한 눌린 자국의 복원성...',
+    },
+    descriptionHtml: {
+      ja: `<p>エコラップ<sup>Ⓡ</sup>ＳＳは、食品トレイ包装用に開発したポリオレフィン系ストレッチシュリンクフィルムです。<br>
+包装物の積み重ねや指圧による凹み跡の復元性に優れております。<br>
+また防曇性や透明性、光沢性に優れているため、包装物の見栄えを良くし、商品価値を高めます。</p>
+<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-single-mini02.jpg" alt=""><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-double-mini01.jpg" alt=""></p>
+<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">当社の環境貢献製品「Caerula®」はこちら</a><br>
+タイプ別により認定リーフが異なります<br>
+一部包装梱包資材に対してCaerula®認定しております</p>`,
+      en: `<p>VANGUARD™ SS is a polyolefin-based stretch shrink film developed for food tray packaging.<br>
+It offers excellent recovery from dents caused by stacking or finger pressure.<br>
+With excellent anti-fog, transparency, and gloss properties, it enhances the appearance of packaged goods and increases their product value.</p>
+<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-single-mini02.jpg" alt=""><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-double-mini01.jpg" alt=""></p>
+<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">See our environmentally friendly product "Caerula®" here</a><br>
+The certification leaf differs depending on the type<br>
+Some packaging materials are certified as Caerula®</p>`,
+      zh: `<p>VANGUARD™ SS是为食品托盘包装开发的聚烯烃系拉伸收缩薄膜。<br>
+对堆叠或指压造成的凹陷痕迹具有优异的复原性。<br>
+此外，防雾性、透明性、光泽性优异，可提升包装物的外观，提高商品价值。</p>
+<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-single-mini02.jpg" alt=""><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-double-mini01.jpg" alt=""></p>
+<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">点击此处了解本公司的环境贡献产品"Caerula®"</a><br>
+认证标识因类型而异<br>
+部分包装材料已获得Caerula®认证</p>`,
+      ko: `<p>VANGUARD™ SS는 식품 트레이 포장용으로 개발한 폴리올레핀계 스트레치 수축 필름입니다.<br>
+포장물의 적재나 손가락 압력에 의한 눌린 자국의 복원성이 우수합니다.<br>
+또한 방담성과 투명성, 광택성이 우수하여 포장물의 외관을 좋게 하고 상품 가치를 높입니다.</p>
+<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-single-mini02.jpg" alt=""><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-double-mini01.jpg" alt=""></p>
+<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">당사의 환경 기여 제품 "Caerula®"는 이곳에서</a><br>
+타입에 따라 인증 리프가 다릅니다<br>
+일부 포장 자재에 대해 Caerula® 인증을 받았습니다</p>`,
+    },
+    features: {
+      ja: [
+        '包装物の積み重ねや指圧による凹み跡の復元性に優れております。',
+        '低温収縮性に優れ、包装物のシワやタルミを防ぎます。',
+        '防曇性、透明性、光沢性に優れ、包装物の見栄えを良くします。',
+        'PVCと比べ、水蒸気バリアー性に優れ、商品の乾燥、目減りを最小限に抑えます。',
+      ],
+      en: [
+        'Excellent recovery from dents caused by stacking or finger pressure.',
+        'Excellent low-temperature shrinkability prevents wrinkles and sagging of the packaging.',
+        'Excellent anti-fog, transparency, and gloss properties enhance the appearance of packaged goods.',
+        'Compared to PVC, it offers superior water-vapor barrier performance, minimizing product drying and weight loss.',
+      ],
+      zh: [
+        '对堆叠或指压造成的凹陷痕迹具有优异的复原性。',
+        '低温收缩性优异，防止包装物起皱和松弛。',
+        '防雾性、透明性、光泽性优异，提升包装物的外观。',
+        '与PVC相比，水蒸气阻隔性优异，将商品的干燥和减量降到最低。',
+      ],
+      ko: [
+        '포장물의 적재나 손가락 압력에 의한 눌린 자국의 복원성이 우수합니다.',
+        '저온 수축성이 우수하여 포장물의 주름이나 늘어짐을 방지합니다.',
+        '방담성, 투명성, 광택성이 우수하여 포장물의 외관을 좋게 합니다.',
+        'PVC에 비해 수증기 배리어성이 우수하여 상품의 건조와 중량 감소를 최소한으로 억제합니다.',
+      ],
+    },
+    usesLabel: {
+      ja: '用途',
+      en: 'Applications',
+      zh: '用途',
+      ko: '용도',
+    },
+    usesHtml: {
+      ja: '<p>精肉、鮮魚、惣菜、乾物、野菜などの食品トレイ包装用</p>',
+      en: '<p>For food tray packaging of fresh meat, fresh fish, prepared foods, dried foods, vegetables, etc.</p>',
+      zh: '<p>用于精肉、鲜鱼、熟食、干货、蔬菜等的食品托盘包装</p>',
+      ko: '<p>정육, 선어, 반찬, 건어물, 채소 등의 식품 트레이 포장용</p>',
+    },
+    specLabel: {
+      ja: '仕様',
+      en: 'Specifications',
+      zh: '规格',
+      ko: '사양',
+    },
+    specHtml: {
+      ja: '<p>お客様のご要望に応じて、グレード・規格を取り揃えております。</p>',
+      en: '<p>We offer a range of grades and specifications to meet customer requirements.</p>',
+      zh: '<p>可根据客户需求提供各种等级和规格。</p>',
+      ko: '<p>고객의 요청에 따라 다양한 등급·규격을 갖추고 있습니다.</p>',
+    },
+    pdfUrl: 'https://www.okr-ind.co.jp/wp/wp-content/uploads/20250421ekorappu.pdf',
+    pdfLabel: {
+      ja: 'エコラップ® / PDF',
+      en: 'VANGUARD™ / PDF',
+      zh: 'VANGUARD™ / PDF',
+      ko: 'VANGUARD™ / PDF',
+    },
+  },
+  {
+    id: '486',
+    image: 'https://www.okr-ind.co.jp/wp/wp-content/uploads/cd41e6d28f693ff9c34cbcadec9f66aa.png',
+    thumbnailImage: 'https://www.okr-ind.co.jp/wp/wp-content/uploads/cd41e6d28f693ff9c34cbcadec9f66aa.png',
+    postClass: 'post-486 products type-products status-publish has-post-thumbnail products_cat-food products_cat-food-film products_division-plastic-film products_division-packaging-bu ja',
+    bodyClass: 'products-template-default single single-products postid-486 ja',
+    contactItem: '486',
+    name: {
+      ja: 'エコラップ®G/BSS',
+      en: 'VANGUARD™ G/BSS',
+      zh: 'VANGUARD™ G/BSS',
+      ko: 'VANGUARD™ G/BSS',
+    },
+    lead: {
+      ja: '高性能バリアーシュリンクフィルム',
+      en: 'High-performance barrier shrink film',
+      zh: '高性能阻隔收缩薄膜',
+      ko: '고성능 배리어 수축 필름',
+    },
+    excerptText: {
+      ja: 'エコラップⓇG/BSSは、オーバーラップ、トレイトップシール包装用に開発された高性能バリアーシュリンクフィルムです。\n耐ピンホール性や防曇性...',
+      en: 'VANGUARD™ G/BSS is a high-performance barrier shrink film developed for overwrap and tray top-seal packaging, featuring pinhole resistance and anti-fog properties...',
+      zh: 'VANGUARD™ G/BSS是为覆盖包装、托盘顶封包装开发的高性能阻隔收缩薄膜，具有耐针孔性和防雾性...',
+      ko: 'VANGUARD™ G/BSS는 오버랩, 트레이 톱 실 포장용으로 개발된 고성능 배리어 수축 필름으로, 내핀홀성과 방담성...',
+    },
+    descriptionHtml: {
+      ja: `<p>エコラップ<sup>Ⓡ</sup>G/BSSは、オーバーラップ、トレイトップシール包装用に開発された高性能バリアーシュリンクフィルムです。<br>
+耐ピンホール性や防曇性、バリアー性に優れており、包装物の見栄えを良くしたり、ガス充填をおこなうことで包装物のロングライフ化のお手伝いをすることができます。</p>
+<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-triple-mini02.jpg" alt=""></p>
+<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">当社の環境貢献製品「Caerula®」はこちら</a></p>
+<p>&nbsp;</p>`,
+      en: `<p>VANGUARD™ G/BSS is a high-performance barrier shrink film developed for overwrap and tray top-seal packaging.<br>
+With excellent pinhole resistance, anti-fog, and barrier properties, it enhances the appearance of packaged goods and, through gas filling, helps extend the shelf life of packaged products.</p>
+<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-triple-mini02.jpg" alt=""></p>
+<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">See our environmentally friendly product "Caerula®" here</a></p>
+<p>&nbsp;</p>`,
+      zh: `<p>VANGUARD™ G/BSS是为覆盖包装、托盘顶封包装开发的高性能阻隔收缩薄膜。<br>
+耐针孔性、防雾性、阻隔性优异，可提升包装物的外观，并通过充气帮助包装物实现长保质期。</p>
+<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-triple-mini02.jpg" alt=""></p>
+<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">点击此处了解本公司的环境贡献产品"Caerula®"</a></p>
+<p>&nbsp;</p>`,
+      ko: `<p>VANGUARD™ G/BSS는 오버랩, 트레이 톱 실 포장용으로 개발된 고성능 배리어 수축 필름입니다.<br>
+내핀홀성과 방담성, 배리어성이 우수하여 포장물의 외관을 좋게 하거나 가스 충전을 통해 포장물의 장기 보존에 도움을 줄 수 있습니다.</p>
+<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-triple-mini02.jpg" alt=""></p>
+<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">당사의 환경 기여 제품 "Caerula®"는 이곳에서</a></p>
+<p>&nbsp;</p>`,
+    },
+    features: {
+      ja: [
+        '耐ピンホール性に優れる',
+        '防曇性、透明性、光沢性に優れ、包装物の見栄えを良くします。',
+        'バリアー性に優れ、ガス置換包装により、賞味期限を延ばすことが可能です。',
+      ],
+      en: [
+        'Excellent pinhole resistance.',
+        'Excellent anti-fog, transparency, and gloss properties enhance the appearance of packaged goods.',
+        'Excellent barrier properties allow shelf life to be extended through gas-flush packaging.',
+      ],
+      zh: [
+        '耐针孔性优异。',
+        '防雾性、透明性、光泽性优异，提升包装物的外观。',
+        '阻隔性优异，通过气体置换包装可延长保质期。',
+      ],
+      ko: [
+        '내핀홀성이 우수합니다.',
+        '방담성, 투명성, 광택성이 우수하여 포장물의 외관을 좋게 합니다.',
+        '배리어성이 우수하여 가스 치환 포장을 통해 유통기한을 연장할 수 있습니다.',
+      ],
+    },
+    usesLabel: {
+      ja: '用途',
+      en: 'Applications',
+      zh: '用途',
+      ko: '용도',
+    },
+    usesHtml: {
+      ja: '<p>精肉、鮮魚、惣菜、ハム、ベーコン　等</p>',
+      en: '<p>Fresh meat, fresh fish, prepared foods, ham, bacon, etc.</p>',
+      zh: '<p>精肉、鲜鱼、熟食、火腿、培根　等</p>',
+      ko: '<p>정육, 선어, 반찬, 햄, 베이컨 등</p>',
+    },
+    specLabel: {
+      ja: '仕様',
+      en: 'Specifications',
+      zh: '规格',
+      ko: '사양',
+    },
+    specHtml: {
+      ja: '<p>お客様のご要望に応じて、グレード・規格を取り揃えております。</p>',
+      en: '<p>We offer a range of grades and specifications to meet customer requirements.</p>',
+      zh: '<p>可根据客户需求提供各种等级和规格。</p>',
+      ko: '<p>고객의 요청에 따라 다양한 등급·규격을 갖추고 있습니다.</p>',
+    },
+    pdfUrl: 'https://www.okr-ind.co.jp/wp/wp-content/uploads/20250421ekorappu.pdf',
+    pdfLabel: {
+      ja: 'エコラップ® / PDF',
+      en: 'VANGUARD™ / PDF',
+      zh: 'VANGUARD™ / PDF',
+      ko: 'VANGUARD™ / PDF',
+    },
+  },
+];
+
+const allProducts: Product[] = [...displayFilmProducts, ...foodFilmProducts];
+
 export function getProductById(id: string): Product | undefined {
-  return products.find((p) => p.id === id);
+  return allProducts.find((p) => p.id === id);
 }

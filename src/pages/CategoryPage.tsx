@@ -1,17 +1,34 @@
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { products } from '../data/products';
 import ProductCard from '../components/ProductCard';
 import { asLang } from '../i18n/lang';
+import type { CategoryDef } from '../data/categories';
 
-export default function CategoryPage() {
+interface Props {
+  category: CategoryDef;
+}
+
+// 食品カテゴリのサイドバー項目。display-film / food-film はサイト内ルート、
+// それ以外は本家サイトへの外部リンク。
+const SIDEBAR_ITEMS: Array<{ slug: string; key: string; internal?: boolean; href?: string }> = [
+  { slug: 'food-film', key: 'category.sidebarItems.foodFilm', internal: true },
+  { slug: 'meet-film', key: 'category.sidebarItems.meetFilm', href: 'https://www.okr-ind.co.jp/products/use/meet-film/' },
+  { slug: 'display-film', key: 'category.sidebarItems.displayFilm', internal: true },
+  { slug: 'liquid-film', key: 'category.sidebarItems.liquidFilm', href: 'https://www.okr-ind.co.jp/products/use/liquid-film/' },
+  { slug: 'food-laminate-film', key: 'category.sidebarItems.foodLaminateFilm', href: 'https://www.okr-ind.co.jp/products/use/food-laminate-film/' },
+  { slug: 'transport-film', key: 'category.sidebarItems.transportFilm', href: 'https://www.okr-ind.co.jp/products/use/transport-film/' },
+];
+
+export default function CategoryPage({ category }: Props) {
   const { t, i18n } = useTranslation();
   const lang = asLang(i18n.language);
+  const title = t(category.titleKey);
 
   useEffect(() => {
-    document.title = `${t('category.title')} - ${t('common.products')} | 大倉工業株式会社`;
-    document.body.className = `archive tax-products_cat term-display-film term-48 ${lang}`;
-  }, [t, lang]);
+    document.title = `${title} - ${t('common.products')} | 大倉工業株式会社`;
+    document.body.className = `archive tax-products_cat ${category.term} ${lang}`;
+  }, [t, lang, title, category.term]);
 
   return (
     <main className="m-body products">
@@ -26,7 +43,7 @@ export default function CategoryPage() {
         </div>
       </div>
 
-      <div className="m-cont post-484 products type-products status-publish has-post-thumbnail products_cat-food products_cat-display-film products_cat-architecture products_cat-integrated-packaging-film products_division-plastic-film products_division-packaging-bu ja">
+      <div className={`m-cont ${category.contClass}`}>
         <div className="s-bg-bgry-pc l-mb1-sp">
           <div className="l-flex-sp-ms0">
             <ul className="m-idx-products-cat m-hidden-v">
@@ -48,7 +65,7 @@ export default function CategoryPage() {
               <li className="list-breadcrumb"><a className="link-breadcrumb" href="https://www.okr-ind.co.jp/">{t('common.home')}</a></li>
               <li className="list-breadcrumb">{t('common.products')}</li>
               <li className="list-breadcrumb"><a className="link-breadcrumb" href="https://www.okr-ind.co.jp/products/use/food/">{t('category.food')}</a></li>
-              <li className="list-breadcrumb">{t('category.title')}</li>
+              <li className="list-breadcrumb">{title}</li>
             </ul>
           </div>
         </div>
@@ -61,12 +78,19 @@ export default function CategoryPage() {
                 <li className="drop">
                   <span className="inner-ttl">{t('category.food')}</span>
                   <ul className="body">
-                    <li className="list"><a className="link food-film" href="https://www.okr-ind.co.jp/products/use/food-film/">{t('category.sidebarItems.foodFilm')}</a></li>
-                    <li className="list"><a className="link meet-film" href="https://www.okr-ind.co.jp/products/use/meet-film/">{t('category.sidebarItems.meetFilm')}</a></li>
-                    <li className="list"><a className="link display-film current" href="/products/use/display-film/">{t('category.sidebarItems.displayFilm')}</a></li>
-                    <li className="list"><a className="link liquid-film" href="https://www.okr-ind.co.jp/products/use/liquid-film/">{t('category.sidebarItems.liquidFilm')}</a></li>
-                    <li className="list"><a className="link food-laminate-film" href="https://www.okr-ind.co.jp/products/use/food-laminate-film/">{t('category.sidebarItems.foodLaminateFilm')}</a></li>
-                    <li className="list"><a className="link transport-film" href="https://www.okr-ind.co.jp/products/use/transport-film/">{t('category.sidebarItems.transportFilm')}</a></li>
+                    {SIDEBAR_ITEMS.map((item) => {
+                      const active = item.slug === category.slug;
+                      const className = `link ${item.slug}${active ? ' current' : ''}`;
+                      return (
+                        <li className="list" key={item.slug}>
+                          {item.internal ? (
+                            <Link className={className} to={`/products/use/${item.slug}/`}>{t(item.key)}</Link>
+                          ) : (
+                            <a className={className} href={item.href}>{t(item.key)}</a>
+                          )}
+                        </li>
+                      );
+                    })}
                   </ul>
                 </li>
               </ul>
@@ -74,9 +98,9 @@ export default function CategoryPage() {
           </aside>
 
           <section className="l-main l-float-l">
-            <h1 className="m-ttl s-bdb l-mb0">{t('category.title')}</h1>
+            <h1 className="m-ttl s-bdb l-mb0">{title}</h1>
             <div className="m-idx-products-thumb">
-              {products.map((product) => (
+              {category.products.map((product) => (
                 <ProductCard key={product.id} product={product} />
               ))}
             </div>

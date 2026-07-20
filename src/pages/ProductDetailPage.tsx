@@ -27,7 +27,7 @@ export default function ProductDetailPage() {
     );
   }
 
-  const features = product.features[lang];
+  const features = product.features?.[lang] ?? [];
 
   return (
     <main className="m-body products">
@@ -78,10 +78,12 @@ export default function ProductDetailPage() {
               </div>
 
               <div className="cont product">
-                <div
-                  className="l-pdb1 s-bdb l-mb2"
-                  dangerouslySetInnerHTML={{ __html: product.descriptionHtml[lang] }}
-                />
+                {product.descriptionHtml && (
+                  <div
+                    className="l-pdb1 s-bdb l-mb2"
+                    dangerouslySetInnerHTML={{ __html: product.descriptionHtml[lang] }}
+                  />
+                )}
 
                 {features.length > 0 && (
                   <section id="section1" className="m-sect m-cf-cont">
@@ -96,13 +98,15 @@ export default function ProductDetailPage() {
                   </section>
                 )}
 
-                <section id="section2" className="m-sect m-cf-cont">
-                  <h2 className="m-subttl">{product.usesLabel[lang]}</h2>
-                  <div
-                    className="cont-cf"
-                    dangerouslySetInnerHTML={{ __html: product.usesHtml[lang] }}
-                  />
-                </section>
+                {product.usesLabel && product.usesHtml && (
+                  <section id="section2" className="m-sect m-cf-cont">
+                    <h2 className="m-subttl">{product.usesLabel[lang]}</h2>
+                    <div
+                      className="cont-cf"
+                      dangerouslySetInnerHTML={{ __html: product.usesHtml[lang] }}
+                    />
+                  </section>
+                )}
 
                 {product.materialHtml && (
                   <section id="section3" className="m-sect m-cf-cont">
@@ -116,7 +120,7 @@ export default function ProductDetailPage() {
 
                 {product.specHtml && (
                   <section id="section4" className="m-sect m-cf-cont">
-                    <h2 className="m-subttl">{t('product.spec')}</h2>
+                    <h2 className="m-subttl">{product.specLabel?.[lang] ?? t('product.spec')}</h2>
                     <div
                       className="cont-cf"
                       dangerouslySetInnerHTML={{ __html: product.specHtml[lang] }}
