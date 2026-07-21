@@ -44,3 +44,19 @@ body {
     padding-right: 3px;
   }
 }
+
+/* カテゴリ別のページヘッダー背景をローカル画像で表示（テーマのCDN指定を上書き） */
+.m-pg-hdr.products.industry-car {
+  background-image: url('/images/products/bg-pg-hdr-industry-car-sp.png');
+}
+.m-pg-hdr.products.optical-electronics {
+  background-image: url('/images/products/bg-pg-hdr-optical-electronics-sp.png');
+}
+@media screen and (min-width: 737px) {
+  .m-pg-hdr.products.industry-car {
+    background-image: url('/images/products/bg-pg-hdr-industry-car.png');
+  }
+  .m-pg-hdr.products.optical-electronics {
+    background-image: url('/images/products/bg-pg-hdr-optical-electronics.png');
+  }
+}

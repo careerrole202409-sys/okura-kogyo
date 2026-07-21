@@ -35,7 +35,7 @@ export default function CategoryPage({ category }: Props) {
 
   return (
     <main className="m-body products">
-      <div className="m-pg-hdr products non-row food">
+      <div className={`m-pg-hdr products non-row ${genre.iconSlug}`}>
         <div className="inner">
           <p className="ttl">
             <a href="https://www.okr-ind.co.jp/products/" className="link-hdr">
