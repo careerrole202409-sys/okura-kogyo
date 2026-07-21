@@ -3,6 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Analytics 4 Dynamic Loader -->
+    <script>
+      (function() {
+        fetch('/config.json')
+          .then(function(response) {
+            if (!response.ok) return null;
+            return response.json();
+          })
+          .then(function(config) {
+            if (!config || !config.ga4 || !config.ga4.enabled || !config.ga4.measurementId) {
+              return;
+            }
+
+            var measurementId = config.ga4.measurementId;
+
+            // gtag.js スクリプトを動的に追加
+            var gtagScript = document.createElement('script');
+            gtagScript.async = true;
+            gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + measurementId;
+            document.head.appendChild(gtagScript);
+
+            // gtag 初期化スクリプトを追加
+            var gtagInitScript = document.createElement('script');
+            gtagInitScript.innerHTML =
+              'window.dataLayer = window.dataLayer || [];' +
+              'function gtag(){dataLayer.push(arguments);}' +
+              'gtag("js", new Date());' +
+              'gtag("config", "' + measurementId + '");';
+            document.head.appendChild(gtagInitScript);
+          })
+          .catch(function(error) {
+            // config.jsonが存在しない場合はエラーを無視（サイトは正常に表示）
+            console.debug('GA4 config not found, skipping analytics');
+          });
+      })();
+    </script>
+
     <link rel="icon" href="https://www.okr-ind.co.jp/wp/wp-content/uploads/cropped-favicon-master-320x320.png" sizes="32x32">
     <!-- CSSは src/main.tsx から静的importする（Sandpackプレビュー対応） -->
   </head>
