@@ -119,7 +119,7 @@ export default function Header() {
                 <li className="list"><a href="https://www.okr-ind.co.jp/catalog/" className="link">{t('header.subnav.catalog')}</a></li>
                 <li className="list"><a href="https://www.okr-ind.co.jp/link/" className="link" target="_blank" rel="noreferrer">{t('header.subnav.dedicated')}</a></li>
                 <li className="list"><a href="https://www.okr-ind.co.jp/recruit/" className="link" target="_blank" rel="noreferrer">{t('header.subnav.recruit')}</a></li>
-                <li className="list search"><span className="link"><i></i></span></li>
+                <li className="list search"><a href="https://www.okr-ind.co.jp/search/" className="link"><i></i></a></li>
               </ul>
             </div>
           </div>
