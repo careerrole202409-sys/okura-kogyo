@@ -531,32 +531,32 @@ Some products are excluded.</p>`,
 <p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-triple-mini02.jpg" alt=""></p>
 <p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">当社の環境貢献製品「Caerula®」はこちら</a></p>
 <p>&nbsp;</p>`,
-      en: `<p><span style="color: #007bbb;font-size: small"><strong>PO-based multilayer shrink　ラプラーバイオ®</strong></span><br>
-<span style="color: #007bbb;font-size: small"><strong>LDPE shrink　パワーシュリンクバイオ</strong></span><br>
-<span style="color: #007bbb;font-size: small"><strong>HDPE shrink　CSシュリンクバイオ</strong></span></p>
+      en: `<p><span style="color: #007bbb;font-size: small"><strong>PO-based multilayer shrink　LAPLOR™ BIO</strong></span><br>
+<span style="color: #007bbb;font-size: small"><strong>LDPE shrink　Power Shrink Bio</strong></span><br>
+<span style="color: #007bbb;font-size: small"><strong>HDPE shrink　CS Shrink Bio</strong></span></p>
 <p>&nbsp;</p>
 <p>A series of shrink films made with 25% or more organic raw materials derived from renewable biological resources such as plants.<br>
-Like our widely favored "VANGUARD™," "LAPLOR™," and "パワーシュリンク," these are biomass shrink films that combine excellent packaging performance, heat-seal properties, and shrinkage stress.</p>
-<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-triple-mini02.jpg" alt=""></p>
-<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">See our environmentally friendly product "Caerula®" here</a></p>
+Like our widely favored "VANGUARD™," "LAPLOR™," and "Power Shrink," these are biomass shrink films that combine excellent packaging performance, heat-seal properties, and shrinkage stress.</p>
+<p><img decoding="async" src="/images/products/Caerula3-2.png" alt="" width="150" style="width:150px;height:auto;"></p>
+<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/wp/wp-content/uploads/OKURA_Integrated_Report_2025_English_Caerula.pdf">See our environmentally friendly product "Caerula™" here</a></p>
 <p>&nbsp;</p>`,
-      zh: `<p><span style="color: #007bbb;font-size: small"><strong>PO系多层收缩　ラプラーバイオ®</strong></span><br>
-<span style="color: #007bbb;font-size: small"><strong>LDPE收缩　パワーシュリンクバイオ</strong></span><br>
-<span style="color: #007bbb;font-size: small"><strong>HDPE收缩　CSシュリンクバイオ</strong></span></p>
+      zh: `<p><span style="color: #007bbb;font-size: small"><strong>PO系多层收缩　LAPLOR™ BIO</strong></span><br>
+<span style="color: #007bbb;font-size: small"><strong>LDPE收缩　Power Shrink Bio</strong></span><br>
+<span style="color: #007bbb;font-size: small"><strong>HDPE收缩　CS Shrink Bio</strong></span></p>
 <p>&nbsp;</p>
 <p>这是使用25%以上源自植物等可再生生物有机资源原料的收缩薄膜系列。<br>
-与广受青睐的“VANGUARD™”"LAPLOR™""パワーシュリンク"一样，是兼具优异包装适性、热封性及收缩应力的生物质收缩薄膜。</p>
-<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-triple-mini02.jpg" alt=""></p>
-<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">点击此处了解本公司的环境贡献产品"Caerula®"</a></p>
+与广受青睐的“VANGUARD™”"LAPLOR™""Power Shrink"一样，是兼具优异包装适性、热封性及收缩应力的生物质收缩薄膜。</p>
+<p><img decoding="async" src="/images/products/Caerula3-2.png" alt="" width="150" style="width:150px;height:auto;"></p>
+<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/wp/wp-content/uploads/OKURA_Integrated_Report_2025_English_Caerula.pdf">点击此处了解本公司的环境贡献产品"Caerula™"</a></p>
 <p>&nbsp;</p>`,
-      ko: `<p><span style="color: #007bbb;font-size: small"><strong>PO계 다층 수축　ラプラーバイオ®</strong></span><br>
-<span style="color: #007bbb;font-size: small"><strong>LDPE 수축　パワーシュリンクバイオ</strong></span><br>
-<span style="color: #007bbb;font-size: small"><strong>HDPE 수축　CSシュリンクバイオ</strong></span></p>
+      ko: `<p><span style="color: #007bbb;font-size: small"><strong>PO계 다층 수축　LAPLOR™ BIO</strong></span><br>
+<span style="color: #007bbb;font-size: small"><strong>LDPE 수축　Power Shrink Bio</strong></span><br>
+<span style="color: #007bbb;font-size: small"><strong>HDPE 수축　CS Shrink Bio</strong></span></p>
 <p>&nbsp;</p>
 <p>식물 등 재생 가능한 생물 유래 유기 자원 원료를 25% 이상 사용한 수축 필름 시리즈입니다.<br>
-널리 사랑받고 있는 “VANGUARD™” "LAPLOR™" "パワーシュリンク"와 마찬가지로 우수한 포장 적성과 열봉합성 및 수축 응력을 겸비한 바이오매스 수축 필름입니다.</p>
-<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-triple-mini02.jpg" alt=""></p>
-<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">당사의 환경 기여 제품 "Caerula®"는 이곳에서</a></p>
+널리 사랑받고 있는 “VANGUARD™” "LAPLOR™" "Power Shrink"와 마찬가지로 우수한 포장 적성과 열봉합성 및 수축 응력을 겸비한 바이오매스 수축 필름입니다.</p>
+<p><img decoding="async" src="/images/products/Caerula3-2.png" alt="" width="150" style="width:150px;height:auto;"></p>
+<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/wp/wp-content/uploads/OKURA_Integrated_Report_2025_English_Caerula.pdf">당사의 환경 기여 제품 "Caerula™"는 이곳에서</a></p>
 <p>&nbsp;</p>`,
     },
     features: {
@@ -583,15 +583,15 @@ Like our widely favored "VANGUARD™," "LAPLOR™," and "パワーシュリン�
     },
     pdfLabel: {
       ja: 'バイオマスシュリンクフィルムシリーズ / PDF',
-      en: 'Biomass Shrink Film Series / PDF',
-      zh: '生物质收缩薄膜系列 / PDF',
-      ko: '바이오매스 수축 필름 시리즈 / PDF',
+      en: '',
+      zh: '',
+      ko: '',
     },
     excerptText: {
       ja: 'PO系多層シュリンク　ラプラーバイオ® LDPEシュリンク　パワーシュリンクバイオ HDPEシュリンク　CSシュリンクバイオ ...',
-      en: 'PO-based multilayer shrink ラプラーバイオ® LDPE shrink パワーシュリンクバイオ HDPE shrink CSシュリンクバイオ ...',
-      zh: 'PO系多层收缩　ラプラーバイオ® LDPE收缩　パワーシュリンクバイオ HDPE收缩　CSシュリンクバイオ ...',
-      ko: 'PO계 다층 수축　ラプラーバイオ® LDPE 수축　パワーシュリンクバイオ HDPE 수축　CSシュリンクバイオ ...',
+      en: 'PO-based multilayer shrink LAPLOR™ BIO LDPE shrink Power Shrink Bio HDPE shrink CS Shrink Bio ...',
+      zh: 'PO系多层收缩　LAPLOR™ BIO LDPE收缩　Power Shrink Bio HDPE收缩　CS Shrink Bio ...',
+      ko: 'PO계 다층 수축　LAPLOR™ BIO LDPE 수축　Power Shrink Bio HDPE 수축　CS Shrink Bio ...',
     },
   },
 ];

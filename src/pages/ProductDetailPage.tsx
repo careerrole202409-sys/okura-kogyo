@@ -140,7 +140,7 @@ export default function ProductDetailPage() {
                   </section>
                 )}
 
-                {product.pdfUrl && product.pdfLabel && (
+                {product.pdfUrl && product.pdfLabel?.[lang] && (
                   <p className="m-btn-slide-x round pdf">
                     <a href={product.pdfUrl} target="_blank" rel="noreferrer" className="link">
                       <span>{product.pdfLabel[lang]}</span>
