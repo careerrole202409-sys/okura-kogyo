@@ -28,6 +28,11 @@ export default function ProductDetailPage() {
   }
 
   const features = product.features?.[lang] ?? [];
+  // 日本語は従来の item 付きフォーム、英・中・韓は英語フォームへ
+  const contactUrl =
+    lang === 'ja'
+      ? `https://www.okr-ind.co.jp/contact/plastic-film-c/?item=${product.contactItem}`
+      : 'https://www.okr-ind.co.jp/en/contact/plastic-film-c/';
 
   return (
     <main className="m-body products">
@@ -164,7 +169,7 @@ export default function ProductDetailPage() {
                 </p>
                 <p className="m-btn-slide-x mid round fill full">
                   <a
-                    href={`https://www.okr-ind.co.jp/contact/plastic-film-c/?item=${product.contactItem}`}
+                    href={contactUrl}
                     className="link"
                   >
                     <span className="t-les1">{t('product.mailForm')}</span>
@@ -178,7 +183,7 @@ export default function ProductDetailPage() {
         <div className="l-fix">
           <p className="m-btn-contact">
             <a
-              href={`https://www.okr-ind.co.jp/contact/plastic-film-c/?item=${product.contactItem}`}
+              href={contactUrl}
               className="link-contact"
             >
               {t('product.bottomContactLine1')}<br />
