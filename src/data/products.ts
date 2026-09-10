@@ -634,24 +634,24 @@ export const foodFilmProducts: Product[] = [
       en: `<p>VANGUARD™ SS is a polyolefin-based stretch shrink film developed for food tray packaging.<br>
 It offers excellent recovery from dents caused by stacking or finger pressure.<br>
 With excellent anti-fog, transparency, and gloss properties, it enhances the appearance of packaged goods and increases their product value.</p>
-<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-single-mini02.jpg" alt=""><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-double-mini01.jpg" alt=""></p>
-<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">See our environmentally friendly product "Caerula®" here</a><br>
+<p><img decoding="async" src="/images/products/Caerula1-2.png" alt="" width="150" style="width:150px;height:auto;"><img decoding="async" src="/images/products/Caerula2-2.png" alt="" width="150" style="width:150px;height:auto;"></p>
+<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/wp/wp-content/uploads/OKURA_Integrated_Report_2025_English_Caerula.pdf">See our environmentally friendly product "Caerula™" here</a><br>
 The certification leaf differs depending on the type<br>
-Some packaging materials are certified as Caerula®</p>`,
+Some packaging materials are certified as Caerula™</p>`,
       zh: `<p>VANGUARD™ SS是为食品托盘包装开发的聚烯烃系拉伸收缩薄膜。<br>
 对堆叠或指压造成的凹陷痕迹具有优异的复原性。<br>
 此外，防雾性、透明性、光泽性优异，可提升包装物的外观，提高商品价值。</p>
-<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-single-mini02.jpg" alt=""><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-double-mini01.jpg" alt=""></p>
-<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">点击此处了解本公司的环境贡献产品"Caerula®"</a><br>
+<p><img decoding="async" src="/images/products/Caerula1-2.png" alt="" width="150" style="width:150px;height:auto;"><img decoding="async" src="/images/products/Caerula2-2.png" alt="" width="150" style="width:150px;height:auto;"></p>
+<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/wp/wp-content/uploads/OKURA_Integrated_Report_2025_English_Caerula.pdf">点击此处了解本公司的环境贡献产品"Caerula™"</a><br>
 认证标识因类型而异<br>
-部分包装材料已获得Caerula®认证</p>`,
+部分包装材料已获得Caerula™认证</p>`,
       ko: `<p>VANGUARD™ SS는 식품 트레이 포장용으로 개발한 폴리올레핀계 스트레치 수축 필름입니다.<br>
 포장물의 적재나 손가락 압력에 의한 눌린 자국의 복원성이 우수합니다.<br>
 또한 방담성과 투명성, 광택성이 우수하여 포장물의 외관을 좋게 하고 상품 가치를 높입니다.</p>
-<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-single-mini02.jpg" alt=""><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-double-mini01.jpg" alt=""></p>
-<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">당사의 환경 기여 제품 "Caerula®"는 이곳에서</a><br>
+<p><img decoding="async" src="/images/products/Caerula1-2.png" alt="" width="150" style="width:150px;height:auto;"><img decoding="async" src="/images/products/Caerula2-2.png" alt="" width="150" style="width:150px;height:auto;"></p>
+<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/wp/wp-content/uploads/OKURA_Integrated_Report_2025_English_Caerula.pdf">당사의 환경 기여 제품 "Caerula™"는 이곳에서</a><br>
 타입에 따라 인증 리프가 다릅니다<br>
-일부 포장 자재에 대해 Caerula® 인증을 받았습니다</p>`,
+일부 포장 자재에 대해 Caerula™ 인증을 받았습니다</p>`,
     },
     features: {
       ja: [
@@ -706,9 +706,9 @@ Some packaging materials are certified as Caerula®</p>`,
     pdfUrl: 'https://www.okr-ind.co.jp/wp/wp-content/uploads/20250421ekorappu.pdf',
     pdfLabel: {
       ja: 'エコラップ® / PDF',
-      en: 'VANGUARD™ / PDF',
-      zh: 'VANGUARD™ / PDF',
-      ko: 'VANGUARD™ / PDF',
+      en: '',
+      zh: '',
+      ko: '',
     },
   },
   {
@@ -744,18 +744,18 @@ Some packaging materials are certified as Caerula®</p>`,
 <p>&nbsp;</p>`,
       en: `<p>VANGUARD™ G/BSS is a high-performance barrier shrink film developed for overwrap and tray top-seal packaging.<br>
 With excellent pinhole resistance, anti-fog, and barrier properties, it enhances the appearance of packaged goods and, through gas filling, helps extend the shelf life of packaged products.</p>
-<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-triple-mini02.jpg" alt=""></p>
-<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">See our environmentally friendly product "Caerula®" here</a></p>
+<p><img decoding="async" src="/images/products/Caerula3-2.png" alt="" width="150" style="width:150px;height:auto;"></p>
+<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/wp/wp-content/uploads/OKURA_Integrated_Report_2025_English_Caerula.pdf">See our environmentally friendly product "Caerula™" here</a></p>
 <p>&nbsp;</p>`,
       zh: `<p>VANGUARD™ G/BSS是为覆盖包装、托盘顶封包装开发的高性能阻隔收缩薄膜。<br>
 耐针孔性、防雾性、阻隔性优异，可提升包装物的外观，并通过充气帮助包装物实现长保质期。</p>
-<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-triple-mini02.jpg" alt=""></p>
-<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">点击此处了解本公司的环境贡献产品"Caerula®"</a></p>
+<p><img decoding="async" src="/images/products/Caerula3-2.png" alt="" width="150" style="width:150px;height:auto;"></p>
+<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/wp/wp-content/uploads/OKURA_Integrated_Report_2025_English_Caerula.pdf">点击此处了解本公司的环境贡献产品"Caerula™"</a></p>
 <p>&nbsp;</p>`,
       ko: `<p>VANGUARD™ G/BSS는 오버랩, 트레이 톱 실 포장용으로 개발된 고성능 배리어 수축 필름입니다.<br>
 내핀홀성과 방담성, 배리어성이 우수하여 포장물의 외관을 좋게 하거나 가스 충전을 통해 포장물의 장기 보존에 도움을 줄 수 있습니다.</p>
-<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-triple-mini02.jpg" alt=""></p>
-<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">당사의 환경 기여 제품 "Caerula®"는 이곳에서</a></p>
+<p><img decoding="async" src="/images/products/Caerula3-2.png" alt="" width="150" style="width:150px;height:auto;"></p>
+<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/wp/wp-content/uploads/OKURA_Integrated_Report_2025_English_Caerula.pdf">당사의 환경 기여 제품 "Caerula™"는 이곳에서</a></p>
 <p>&nbsp;</p>`,
     },
     features: {
@@ -807,9 +807,9 @@ With excellent pinhole resistance, anti-fog, and barrier properties, it enhances
     pdfUrl: 'https://www.okr-ind.co.jp/wp/wp-content/uploads/20250421ekorappu.pdf',
     pdfLabel: {
       ja: 'エコラップ® / PDF',
-      en: 'VANGUARD™ / PDF',
-      zh: 'VANGUARD™ / PDF',
-      ko: 'VANGUARD™ / PDF',
+      en: '',
+      zh: '',
+      ko: '',
     },
   },
 ];
@@ -849,18 +849,18 @@ export const liquidFilmProducts: Product[] = [
 <p>&nbsp;</p>`,
       en: `<p>A spouted laminate pouch that lets you use up the contents without waste.</p>
 <p>Compared to bottle containers, it greatly reduces plastic usage, making it an eco-friendly package that helps lower environmental impact.</p>
-<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-triple-mini02.jpg" alt=""></p>
-<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">See our environmentally friendly product "Caerula®" here</a></p>
+<p><img decoding="async" src="/images/products/Caerula3-2.png" alt="" width="150" style="width:150px;height:auto;"></p>
+<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/wp/wp-content/uploads/OKURA_Integrated_Report_2025_English_Caerula.pdf">See our environmentally friendly product "Caerula™" here</a></p>
 <p>&nbsp;</p>`,
       zh: `<p>这是一种带吸嘴的复合薄膜袋，可将内容物毫无浪费地用尽。</p>
 <p>与瓶装容器相比，可大幅减少塑料用量，是一款有助于降低环境负荷的环保型包装。</p>
-<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-triple-mini02.jpg" alt=""></p>
-<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">点击此处了解本公司的环境贡献产品"Caerula®"</a></p>
+<p><img decoding="async" src="/images/products/Caerula3-2.png" alt="" width="150" style="width:150px;height:auto;"></p>
+<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/wp/wp-content/uploads/OKURA_Integrated_Report_2025_English_Caerula.pdf">点击此处了解本公司的环境贡献产品"Caerula™"</a></p>
 <p>&nbsp;</p>`,
       ko: `<p>내용물을 낭비 없이 다 쓸 수 있는 스파우트 부착 라미네이트 파우치입니다.</p>
 <p>병 용기에 비해 플라스틱 사용량을 대폭 줄일 수 있어 환경 부하 저감에 기여하는 친환경 패키지입니다.</p>
-<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-triple-mini02.jpg" alt=""></p>
-<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">당사의 환경 기여 제품 "Caerula®"는 이곳에서</a></p>
+<p><img decoding="async" src="/images/products/Caerula3-2.png" alt="" width="150" style="width:150px;height:auto;"></p>
+<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/wp/wp-content/uploads/OKURA_Integrated_Report_2025_English_Caerula.pdf">당사의 환경 기여 제품 "Caerula™"는 이곳에서</a></p>
 <p>&nbsp;</p>`,
     },
     sections: [
@@ -915,7 +915,7 @@ export const liquidFilmProducts: Product[] = [
 <li style="text-align: left;">ボイル殺菌　85℃、30分間</li>
 </ul>`,
           en: `<h4><strong>Center spout type<br></strong></h4>
-<table style="border-color: #FFFFFF;"><tbody><tr><td style="border-color: #FFFFFF;"><h5><img class="size-full wp-image-2397 alignleft" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/IMG_2107.png" alt="" width="303" height="227"></h5></td></tr></tbody></table>
+<table style="border-color: #FFFFFF;"><tbody><tr><td style="border-color: #FFFFFF;"><h5><img class="size-full wp-image-2397 alignleft" src="/images/products/center_spout_type_eng.jpg" alt="" width="303" height="227"></h5></td></tr></tbody></table>
 <h5>Features</h5>
 <ul>
 <li>A type with the pour spout at the top center of the bag</li>
@@ -926,7 +926,7 @@ export const liquidFilmProducts: Product[] = [
 </ul>
 <p>&nbsp;</p>
 <h4><strong>Corner spout type<br></strong></h4>
-<table style="border-color: #FFFFFF;"><tbody><tr><td style="border-color: #FFFFFF;"><h5><img class="size-full wp-image-2396 alignleft" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/IMG_2000.png" alt="" width="301" height="226"></h5></td></tr></tbody></table>
+<table style="border-color: #FFFFFF;"><tbody><tr><td style="border-color: #FFFFFF;"><h5><img class="size-full wp-image-2396 alignleft" src="/images/products/corner_spout_type_eng.jpg" alt="" width="301" height="226"></h5></td></tr></tbody></table>
 <h5>Features</h5>
 <ul>
 <li style="text-align: left;">A type with the pour spout at a corner of the bag</li>
@@ -937,7 +937,7 @@ export const liquidFilmProducts: Product[] = [
 <li style="text-align: left;">Boil sterilization: 85℃, 30 minutes</li>
 </ul>`,
           zh: `<h4><strong>中央吸嘴型<br></strong></h4>
-<table style="border-color: #FFFFFF;"><tbody><tr><td style="border-color: #FFFFFF;"><h5><img class="size-full wp-image-2397 alignleft" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/IMG_2107.png" alt="" width="303" height="227"></h5></td></tr></tbody></table>
+<table style="border-color: #FFFFFF;"><tbody><tr><td style="border-color: #FFFFFF;"><h5><img class="size-full wp-image-2397 alignleft" src="/images/products/center_spout_type_eng.jpg" alt="" width="303" height="227"></h5></td></tr></tbody></table>
 <h5>特长</h5>
 <ul>
 <li>吸嘴位于袋上部中央的类型</li>
@@ -948,7 +948,7 @@ export const liquidFilmProducts: Product[] = [
 </ul>
 <p>&nbsp;</p>
 <h4><strong>边角吸嘴型<br></strong></h4>
-<table style="border-color: #FFFFFF;"><tbody><tr><td style="border-color: #FFFFFF;"><h5><img class="size-full wp-image-2396 alignleft" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/IMG_2000.png" alt="" width="301" height="226"></h5></td></tr></tbody></table>
+<table style="border-color: #FFFFFF;"><tbody><tr><td style="border-color: #FFFFFF;"><h5><img class="size-full wp-image-2396 alignleft" src="/images/products/corner_spout_type_eng.jpg" alt="" width="301" height="226"></h5></td></tr></tbody></table>
 <h5>特长</h5>
 <ul>
 <li style="text-align: left;">吸嘴位于袋角部的类型</li>
@@ -959,7 +959,7 @@ export const liquidFilmProducts: Product[] = [
 <li style="text-align: left;">煮沸杀菌　85℃、30分钟</li>
 </ul>`,
           ko: `<h4><strong>센터 스파우트 타입<br></strong></h4>
-<table style="border-color: #FFFFFF;"><tbody><tr><td style="border-color: #FFFFFF;"><h5><img class="size-full wp-image-2397 alignleft" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/IMG_2107.png" alt="" width="303" height="227"></h5></td></tr></tbody></table>
+<table style="border-color: #FFFFFF;"><tbody><tr><td style="border-color: #FFFFFF;"><h5><img class="size-full wp-image-2397 alignleft" src="/images/products/center_spout_type_eng.jpg" alt="" width="303" height="227"></h5></td></tr></tbody></table>
 <h5>특장점</h5>
 <ul>
 <li>봉지 상단 중앙에 주입구가 달린 타입</li>
@@ -970,7 +970,7 @@ export const liquidFilmProducts: Product[] = [
 </ul>
 <p>&nbsp;</p>
 <h4><strong>코너 스파우트 타입<br></strong></h4>
-<table style="border-color: #FFFFFF;"><tbody><tr><td style="border-color: #FFFFFF;"><h5><img class="size-full wp-image-2396 alignleft" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/IMG_2000.png" alt="" width="301" height="226"></h5></td></tr></tbody></table>
+<table style="border-color: #FFFFFF;"><tbody><tr><td style="border-color: #FFFFFF;"><h5><img class="size-full wp-image-2396 alignleft" src="/images/products/corner_spout_type_eng.jpg" alt="" width="301" height="226"></h5></td></tr></tbody></table>
 <h5>특장점</h5>
 <ul>
 <li style="text-align: left;">봉지 모서리 부분에 주입구가 달린 타입</li>
@@ -1237,20 +1237,20 @@ export const liquidFilmProducts: Product[] = [
       en: `<p>OK Tainer is a film-type liquid logistics container that leverages the proprietary processing technology we have cultivated as a film manufacturer.<br>
 The bags are produced in a cleanroom, making them safe and hygienic products.<br>
 Designs can be tailored to the application, including the barrier properties and heat resistance required in the food and industrial-product fields.</p>
-<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-triple-mini02.jpg" alt=""></p>
-<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">See our environmentally friendly product "Caerula®" here</a></p>
+<p><img decoding="async" src="/images/products/Caerula3-2.png" alt="" width="150" style="width:150px;height:auto;"></p>
+<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/wp/wp-content/uploads/OKURA_Integrated_Report_2025_English_Caerula.pdf">See our environmentally friendly product "Caerula™" here</a></p>
 <p>&nbsp;</p>`,
       zh: `<p>OK Tainer是充分运用作为薄膜制造商积累的独有加工技术的薄膜型液体物流容器。<br>
 在洁净室内制袋，是安全且卫生的产品。<br>
 可根据用途进行设计，满足食品领域、工业品领域所要求的阻隔性、耐热性等需求。</p>
-<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-triple-mini02.jpg" alt=""></p>
-<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">点击此处了解本公司的环境贡献产品"Caerula®"</a></p>
+<p><img decoding="async" src="/images/products/Caerula3-2.png" alt="" width="150" style="width:150px;height:auto;"></p>
+<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/wp/wp-content/uploads/OKURA_Integrated_Report_2025_English_Caerula.pdf">点击此处了解本公司的环境贡献产品"Caerula™"</a></p>
 <p>&nbsp;</p>`,
       ko: `<p>OK Tainer는 필름 제조사로서 축적한 독자적인 가공 기술을 구사한 필름 타입의 액체 물류 용기입니다.<br>
 클린룸 내에서 봉지를 제작하여 안전하고 위생적인 제품입니다.<br>
 식품 분야, 공업품 분야에서 요구되는 배리어성, 내열성 등 용도에 맞춘 설계가 가능합니다.</p>
-<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-triple-mini02.jpg" alt=""></p>
-<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">당사의 환경 기여 제품 "Caerula®"는 이곳에서</a></p>
+<p><img decoding="async" src="/images/products/Caerula3-2.png" alt="" width="150" style="width:150px;height:auto;"></p>
+<p style="margin-top: 1.5em"><a href="https://www.okr-ind.co.jp/wp/wp-content/uploads/OKURA_Integrated_Report_2025_English_Caerula.pdf">당사의 환경 기여 제품 "Caerula™"는 이곳에서</a></p>
 <p>&nbsp;</p>`,
     },
     sections: [
@@ -1358,16 +1358,16 @@ export const selfAdhesiveProtectionProducts: Product[] = [
 <p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">当社の環境貢献製品「Caerula®」はこちら</a></p>`,
       en: `<p>ESPERANT™ is a low-tack protective film designed for surface protection of electronic-information materials and functional films.<br>
 It is manufactured in a cleanroom (Class 10000) and is used as a protective film for retardation films used in LCD panels, where strict control of foreign matter and fish-eyes is required.</p>
-<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-double-mini01.jpg" alt=""></p>
-<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">See our environmentally friendly product "Caerula®" here</a></p>`,
+<p><img decoding="async" src="/images/products/Caerula2-2.png" alt="" width="150" style="width:150px;height:auto;"></p>
+<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/wp/wp-content/uploads/OKURA_Integrated_Report_2025_English_Caerula.pdf">See our environmentally friendly product "Caerula™" here</a></p>`,
       zh: `<p>ESPERANT™是以电子信息相关部材及功能性薄膜的表面保护为目的的微粘着保护薄膜。<br>
 本产品在洁净室（10000级）内制造，可作为对异物及鱼眼管理要求严格的、用于液晶面板的相位差薄膜的保护用薄膜使用。</p>
-<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-double-mini01.jpg" alt=""></p>
-<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">点击此处了解本公司的环境贡献产品"Caerula®"</a></p>`,
+<p><img decoding="async" src="/images/products/Caerula2-2.png" alt="" width="150" style="width:150px;height:auto;"></p>
+<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/wp/wp-content/uploads/OKURA_Integrated_Report_2025_English_Caerula.pdf">点击此处了解本公司的环境贡献产品"Caerula™"</a></p>`,
       ko: `<p>ESPERANT™는 전자 정보 관련 부재나 기능성 필름의 표면 보호를 목적으로 한 미점착 보호 필름입니다.<br>
 클린룸(클래스 10000) 내에서 제조하고 있으며, 이물질이나 피시아이 관리가 엄격한 액정 패널에 사용되는 위상차 필름의 보호용 필름으로 활용되고 있습니다.</p>
-<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-double-mini01.jpg" alt=""></p>
-<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">당사의 환경 기여 제품 "Caerula®"는 이곳에서</a></p>`,
+<p><img decoding="async" src="/images/products/Caerula2-2.png" alt="" width="150" style="width:150px;height:auto;"></p>
+<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/wp/wp-content/uploads/OKURA_Integrated_Report_2025_English_Caerula.pdf">당사의 환경 기여 제품 "Caerula™"는 이곳에서</a></p>`,
     },
     sections: [
       {
@@ -1736,6 +1736,12 @@ export const carProducts: Product[] = [
     postClass: 'post-4317 products type-products status-publish has-post-thumbnail products_cat-industry-car products_cat-car products_division-new-materials products_division-nm-group1-bu ja',
     bodyClass: 'products-template-default single single-products postid-4317 ja',
     contactItem: '4317',
+    contactDept: {
+      ja: '大倉工業株式会社 合成樹脂事業部',
+      en: 'Okura Industrial Co., Ltd. Plastic Film Division',
+      zh: '大仓工业株式会社 合成树脂事业部',
+      ko: '오쿠라공업 주식회사 합성수지 사업부',
+    },
     name: {
       ja: 'ラミトップ®マスカー HR',
       en: 'Lamitop Masker™ HR',
