@@ -26,17 +26,17 @@ export const displayFilmProducts: Product[] = [
 <p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">当社の環境貢献製品「Caerula®」はこちら</a></p>
 <p>包装梱包資材に対してCaerula®認定しております</p>`,
       en: `<p>Using our proprietary biaxial stretching technology, VANGUARD™ is a <span class="s1">polypropylene shrink film</span> with excellent balanced shrinkage in both the longitudinal and transverse directions, capable of neatly packaging a variety of products.</p>
-<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-single-mini02.jpg" alt=""></p>
-<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">See our environmentally friendly product "Caerula®" here</a></p>
-<p>Certified as Caerula® for packaging materials.</p>`,
+<p><img decoding="async" src="/images/products/Caerula1-2.png" alt="" width="150" style="width:150px;height:auto;"></p>
+<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/wp/wp-content/uploads/OKURA_Integrated_Report_2025_English_Caerula.pdf">See our environmentally friendly product "Caerula™" here</a></p>
+<p>Certified as Caerula™ for packaging materials.</p>`,
       zh: `<p>VANGUARD™采用本公司独有的双向拉伸技术，具有纵横平衡优异的收缩特性，是能够将各种商品包装得整洁美观的<span class="s1">聚丙烯收缩薄膜</span>。</p>
-<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-single-mini02.jpg" alt=""></p>
-<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">点击此处了解本公司的环境贡献产品"Caerula®"</a></p>
-<p>已获得包装材料的Caerula®认证。</p>`,
+<p><img decoding="async" src="/images/products/Caerula1-2.png" alt="" width="150" style="width:150px;height:auto;"></p>
+<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/wp/wp-content/uploads/OKURA_Integrated_Report_2025_English_Caerula.pdf">点击此处了解本公司的环境贡献产品"Caerula™"</a></p>
+<p>已获得包装材料的Caerula™认证。</p>`,
       ko: `<p>VANGUARD™는 당사 고유의 이축 연신 기술로 세로와 가로의 균형이 우수한 수축 특성을 지녀 다양한 상품을 깔끔하게 포장할 수 있는 <span class="s1">폴리프로필렌 수축 필름</span>입니다.</p>
-<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-single-mini02.jpg" alt=""></p>
-<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">당사의 환경 기여 제품 "Caerula®"는 이곳에서</a></p>
-<p>포장 자재에 대해 Caerula® 인증을 받았습니다.</p>`,
+<p><img decoding="async" src="/images/products/Caerula1-2.png" alt="" width="150" style="width:150px;height:auto;"></p>
+<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/wp/wp-content/uploads/OKURA_Integrated_Report_2025_English_Caerula.pdf">당사의 환경 기여 제품 "Caerula™"는 이곳에서</a></p>
+<p>포장 자재에 대해 Caerula™ 인증을 받았습니다.</p>`,
     },
     features: {
       ja: [
@@ -175,18 +175,18 @@ export const displayFilmProducts: Product[] = [
 一部対象外製品があります</p>`,
       en: `<p>LAPLOR™ 501 is a polyolefin multilayer shrink film with excellent transparency and stable heat-seal performance.<br>
 It also offers superior cold resistance compared to PP and PVC shrink films.</p>
-<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-single-mini02.jpg" alt=""></p>
-<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">See our environmentally friendly product "Caerula®" here</a><br>
+<p><img decoding="async" src="/images/products/Caerula1-2.png" alt="" width="150" style="width:150px;height:auto;"></p>
+<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/wp/wp-content/uploads/OKURA_Integrated_Report_2025_English_Caerula.pdf">See our environmentally friendly product "Caerula™" here</a><br>
 Some products are excluded.</p>`,
       zh: `<p>LAPLOR™ 501是聚烯烃多层收缩薄膜，透明性优异，具备稳定的热封适性。<br>
 此外，在耐寒性方面优于PP和PVC收缩薄膜。</p>
-<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-single-mini02.jpg" alt=""></p>
-<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">点击此处了解本公司的环境贡献产品"Caerula®"</a><br>
+<p><img decoding="async" src="/images/products/Caerula1-2.png" alt="" width="150" style="width:150px;height:auto;"></p>
+<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/wp/wp-content/uploads/OKURA_Integrated_Report_2025_English_Caerula.pdf">点击此处了解本公司的环境贡献产品"Caerula™"</a><br>
 部分产品不在对象范围内。</p>`,
       ko: `<p>LAPLOR™ 501은 폴리올레핀 다층 수축 필름으로 투명성이 우수하고 안정적인 열봉합 적성을 갖추고 있습니다.<br>
 또한 내한성에 있어서는 PP나 PVC 수축 필름보다 우수합니다.</p>
-<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-single-mini02.jpg" alt=""></p>
-<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">당사의 환경 기여 제품 "Caerula®"는 이곳에서</a><br>
+<p><img decoding="async" src="/images/products/Caerula1-2.png" alt="" width="150" style="width:150px;height:auto;"></p>
+<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/wp/wp-content/uploads/OKURA_Integrated_Report_2025_English_Caerula.pdf">당사의 환경 기여 제품 "Caerula™"는 이곳에서</a><br>
 일부 대상 외 제품이 있습니다.</p>`,
     },
     features: {
@@ -353,21 +353,21 @@ Some products are excluded.</p>`,
 一部対象外製品があります</p>`,
       en: `<p>V301 and V303 are cross-linked polyolefin multilayer shrink films—all-purpose shrink films with a wide shrinkage temperature range and excellent heat-seal performance.<br>
 They package products of various shapes beautifully and gently.</p>
-<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-single-mini02.jpg" alt=""></p>
-<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">See our environmentally friendly product "Caerula®" here</a><br>
-Certified as Caerula® for packaging materials.<br>
+<p><img decoding="async" src="/images/products/Caerula1-2.png" alt="" width="150" style="width:150px;height:auto;"></p>
+<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/wp/wp-content/uploads/OKURA_Integrated_Report_2025_English_Caerula.pdf">See our environmentally friendly product "Caerula™" here</a><br>
+Certified as Caerula™ for packaging materials.<br>
 Some products are excluded.</p>`,
       zh: `<p>V301、V303是交联聚烯烃多层收缩薄膜，是具备宽广收缩温度范围和热封适性的万能收缩薄膜。<br>
 能够将各种形状的商品包装得美观柔和。</p>
-<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-single-mini02.jpg" alt=""></p>
-<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">点击此处了解本公司的环境贡献产品"Caerula®"</a><br>
-已获得包装材料的Caerula®认证。<br>
+<p><img decoding="async" src="/images/products/Caerula1-2.png" alt="" width="150" style="width:150px;height:auto;"></p>
+<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/wp/wp-content/uploads/OKURA_Integrated_Report_2025_English_Caerula.pdf">点击此处了解本公司的环境贡献产品"Caerula™"</a><br>
+已获得包装材料的Caerula™认证。<br>
 部分产品不在对象范围内。</p>`,
       ko: `<p>V301, V303은 가교 폴리올레핀 다층 수축 필름으로 폭넓은 수축 온도 영역과 열봉합 적성을 갖춘 만능 수축 필름입니다.<br>
 다양한 형태의 상품을 아름답고 부드럽게 포장합니다.</p>
-<p><img decoding="async" src="https://www.okr-ind.co.jp/wp/wp-content/uploads/Caerula-single-mini02.jpg" alt=""></p>
-<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/sustainability/s-environment/#contribution">당사의 환경 기여 제품 "Caerula®"는 이곳에서</a><br>
-포장 자재에 대해 Caerula® 인증을 받았습니다.<br>
+<p><img decoding="async" src="/images/products/Caerula1-2.png" alt="" width="150" style="width:150px;height:auto;"></p>
+<p style="margin-top: 1.5em;"><a href="https://www.okr-ind.co.jp/wp/wp-content/uploads/OKURA_Integrated_Report_2025_English_Caerula.pdf">당사의 환경 기여 제품 "Caerula™"는 이곳에서</a><br>
+포장 자재에 대해 Caerula™ 인증을 받았습니다.<br>
 일부 대상 외 제품이 있습니다.</p>`,
     },
     features: {
