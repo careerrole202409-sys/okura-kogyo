@@ -163,7 +163,7 @@ export default function ProductDetailPage() {
               <div className="body">
                 <h5 className="ttl">{t('product.contactHeading')}</h5>
                 <p className="info l-mb1">
-                  <span className="subttl">{product.contactDept?.[lang] ?? t('product.contactDept')}</span>
+                  <span className="subttl">{t('product.contactDept')}</span>
                   <span className="num">Tel: 0877-56-1150</span>
                   <span>{t('product.contactHours')}</span>
                 </p>

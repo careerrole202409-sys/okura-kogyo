@@ -14,8 +14,6 @@ export interface Product {
   pdfUrl?: string;
   // 指定した場合、一覧カードのリンクをサイト内ルートではなくこの外部URL（旧サイト）に向ける
   externalUrl?: string;
-  // お問い合わせ欄の事業部名を製品ごとに上書き（省略時は t('product.contactDept')）
-  contactDept?: Localized<string>;
   // 翻訳フィールド（言語ごとに値を持つ）
   name: Localized<string>;
   lead: Localized<string>;

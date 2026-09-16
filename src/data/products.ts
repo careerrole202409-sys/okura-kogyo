@@ -1736,12 +1736,6 @@ export const carProducts: Product[] = [
     postClass: 'post-4317 products type-products status-publish has-post-thumbnail products_cat-industry-car products_cat-car products_division-new-materials products_division-nm-group1-bu ja',
     bodyClass: 'products-template-default single single-products postid-4317 ja',
     contactItem: '4317',
-    contactDept: {
-      ja: '大倉工業株式会社 合成樹脂事業部',
-      en: 'Okura Industrial Co., Ltd. Plastic Film Division',
-      zh: '大仓工业株式会社 合成树脂事业部',
-      ko: '오쿠라공업 주식회사 합성수지 사업부',
-    },
     name: {
       ja: 'ラミトップ®マスカー HR',
       en: 'Lamitop Masker™ HR',

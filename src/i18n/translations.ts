@@ -238,7 +238,7 @@ export const translations = {
       material: 'Material',
       spec: 'Specifications',
       contactHeading: 'Inquiries About This Product',
-      contactDept: 'Okura Industrial Co., Ltd. Synthetic Resin Division',
+      contactDept: 'Okura Industrial Co., Ltd. Plastic Film Division',
       contactHours: 'Hours: 9:00-17:00 (Weekdays Only)',
       mailForm: 'Mail Form Here',
       bottomContactLine1: 'Inquiries: 0877-56-1150 (Main)',
