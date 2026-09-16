@@ -13,6 +13,7 @@ export interface SidebarItem {
   key: string; // i18n キー
   internal?: boolean; // サイト内ルート（/products/use/{slug}/）
   href?: string; // 外部リンク先
+  hidden?: boolean; // true の間、日本語以外の言語でサイドバー非表示にする（日本語では表示）
 }
 
 // 上位ジャンル（食品 / 光学・情報電子 …）。カテゴリアイコンの current 位置・
@@ -41,7 +42,8 @@ export const foodGenre: Genre = {
   labelKey: 'header.productsItems.food',
   href: 'https://www.okr-ind.co.jp/products/use/food/',
   sidebarItems: [
-    { slug: 'food-film', key: 'category.sidebarItems.foodFilm', internal: true },
+    // food-film は日本語以外の言語で一時的にサイドバー非表示（再表示時に hidden: true を外す）
+    { slug: 'food-film', key: 'category.sidebarItems.foodFilm', internal: true, hidden: true },
     { slug: 'meet-film', key: 'category.sidebarItems.meetFilm', href: 'https://www.okr-ind.co.jp/products/use/meet-film/' },
     { slug: 'display-film', key: 'category.sidebarItems.displayFilm', internal: true },
     { slug: 'liquid-film', key: 'category.sidebarItems.liquidFilm', internal: true },

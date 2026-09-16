@@ -85,7 +85,8 @@ export default function CategoryPage({ category }: Props) {
                 <li className="drop">
                   <span className="inner-ttl">{genreLabel}</span>
                   <ul className="body">
-                    {genre.sidebarItems.map((item) => {
+                    {/* hidden の項目は日本語では表示、それ以外の言語では非表示 */}
+                    {genre.sidebarItems.filter((item) => !(item.hidden && lang !== 'ja')).map((item) => {
                       const active = item.slug === category.slug;
                       const className = `link ${item.slug}${active ? ' current' : ''}`;
                       return (
@@ -107,9 +108,11 @@ export default function CategoryPage({ category }: Props) {
           <section className="l-main l-float-l">
             <h1 className="m-ttl s-bdb l-mb0">{title}</h1>
             <div className="m-idx-products-thumb">
-              {category.products.map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
+              {category.products
+                .filter((product) => !(product.hiddenForeign && lang !== 'ja'))
+                .map((product) => (
+                  <ProductCard key={product.id} product={product} />
+                ))}
             </div>
           </section>
         </div>

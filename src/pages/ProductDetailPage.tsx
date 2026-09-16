@@ -8,7 +8,9 @@ export default function ProductDetailPage() {
   const { t, i18n } = useTranslation();
   const lang = asLang(i18n.language);
   const { id } = useParams<{ id: string }>();
-  const product = getProductById(id ?? '');
+  const found = getProductById(id ?? '');
+  // 日本語以外で非表示指定の製品は「見つかりません」扱いにする
+  const product = found && !(found.hiddenForeign && lang !== 'ja') ? found : undefined;
 
   useEffect(() => {
     if (!product) return;

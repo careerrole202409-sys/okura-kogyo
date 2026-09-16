@@ -8,6 +8,7 @@ export const displayFilmProducts: Product[] = [
     postClass: 'post-484 products type-products status-publish has-post-thumbnail products_cat-food products_cat-display-film products_cat-architecture products_cat-integrated-packaging-film products_division-plastic-film products_division-packaging-bu ja',
     bodyClass: 'products-template-default single single-products postid-484 ja',
     contactItem: '484',
+    hiddenForeign: true, // 日本語以外では一覧・詳細ページで非表示
     name: {
       ja: 'オークラップ®',
       en: 'VANGUARD™',
@@ -1709,6 +1710,7 @@ export const carProducts: Product[] = [
     postClass: 'post-488 products type-products status-publish has-post-thumbnail products_cat-industry-car products_cat-car products_division-new-materials products_division-nm-group1-bu ja',
     bodyClass: 'products-template-default single single-products postid-488 ja',
     contactItem: '488',
+    hiddenForeign: true, // 日本語以外では一覧・詳細ページで非表示
     externalUrl: 'https://www.okr-ind.co.jp/products/488/',
     name: {
       ja: 'ウレタンエラストマーフィルム　シルクロン®',
@@ -1736,6 +1738,7 @@ export const carProducts: Product[] = [
     postClass: 'post-4317 products type-products status-publish has-post-thumbnail products_cat-industry-car products_cat-car products_division-new-materials products_division-nm-group1-bu ja',
     bodyClass: 'products-template-default single single-products postid-4317 ja',
     contactItem: '4317',
+    hiddenForeign: true, // 日本語以外では一覧・詳細ページで非表示
     name: {
       ja: 'ラミトップ®マスカー HR',
       en: 'Lamitop Masker™ HR',

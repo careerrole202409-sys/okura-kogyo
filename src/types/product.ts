@@ -14,6 +14,8 @@ export interface Product {
   pdfUrl?: string;
   // 指定した場合、一覧カードのリンクをサイト内ルートではなくこの外部URL（旧サイト）に向ける
   externalUrl?: string;
+  // true の間、日本語以外の言語で一覧・詳細ページから非表示にする（日本語では表示）
+  hiddenForeign?: boolean;
   // 翻訳フィールド（言語ごとに値を持つ）
   name: Localized<string>;
   lead: Localized<string>;
