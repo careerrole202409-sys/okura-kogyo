@@ -1,13 +1,16 @@
 import { useTranslation } from 'react-i18next';
+import { asLang } from '../i18n/lang';
 
 export default function Footer() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  // 日本語は logo-full-ja.png、それ以外の言語は logo-full-en.png
+  const logoSrc = asLang(i18n.language) === 'ja' ? '/logo-full-ja.png' : '/logo-full-en.png';
   return (
     <footer className="m-ftr products">
       <div className="inner">
         <div className="left">
           <img
-            src="https://www.okr-ind.co.jp/wp/wp-content/themes/okr-ind/images/common/logo-full.png"
+            src={logoSrc}
             alt="マーク"
             className="ttl"
           />
