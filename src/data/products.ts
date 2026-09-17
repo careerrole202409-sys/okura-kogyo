@@ -1712,7 +1712,6 @@ export const carProducts: Product[] = [
     postClass: 'post-488 products type-products status-publish has-post-thumbnail products_cat-industry-car products_cat-car products_division-new-materials products_division-nm-group1-bu ja',
     bodyClass: 'products-template-default single single-products postid-488 ja',
     contactItem: '488',
-    hiddenForeign: true, // 日本語以外では一覧・詳細ページで非表示
     externalUrl: 'https://www.okr-ind.co.jp/products/488/',
     name: {
       ja: 'ウレタンエラストマーフィルム　シルクロン®',
@@ -1815,6 +1814,7 @@ export const carProducts: Product[] = [
     postClass: 'post-411 products type-products status-publish has-post-thumbnail products_cat-industry-car products_cat-car products_division-new-materials products_division-nm-group1-bu ja',
     bodyClass: 'products-template-default single single-products postid-411 ja',
     contactItem: '411',
+    hiddenForeign: true, // 日本語以外では一覧・詳細ページで非表示
     name: {
       ja: 'ラミトップ®',
       en: 'Lamitop™',
