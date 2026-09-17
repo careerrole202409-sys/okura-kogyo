@@ -606,6 +606,7 @@ export const foodFilmProducts: Product[] = [
     postClass: 'post-485 products type-products status-publish has-post-thumbnail products_cat-food products_cat-food-film products_division-plastic-film products_division-packaging-bu ja',
     bodyClass: 'products-template-default single single-products postid-485 ja',
     contactItem: '485',
+    hiddenForeign: true, // 日本語以外では一覧・詳細ページで非表示
     name: {
       ja: 'エコラップ®SS',
       en: 'VANGUARD™ SS',
@@ -719,6 +720,7 @@ Some packaging materials are certified as Caerula™</p>`,
     postClass: 'post-486 products type-products status-publish has-post-thumbnail products_cat-food products_cat-food-film products_division-plastic-film products_division-packaging-bu ja',
     bodyClass: 'products-template-default single single-products postid-486 ja',
     contactItem: '486',
+    hiddenForeign: true, // 日本語以外では一覧・詳細ページで非表示
     name: {
       ja: 'エコラップ®G/BSS',
       en: 'VANGUARD™ G/BSS',

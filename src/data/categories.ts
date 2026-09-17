@@ -34,6 +34,7 @@ export interface CategoryDef {
   titleKey: string; // h1 / パンくず末尾 / document.title に使う i18n キー
   genre: Genre;
   products: Product[];
+  hiddenForeign?: boolean; // true の間、日本語以外の言語ではページ自体を非公開（見つかりません表示）
 }
 
 // ===== ジャンル定義 =====
@@ -98,6 +99,7 @@ export const foodFilmCategory: CategoryDef = {
   titleKey: 'category.sidebarItems.foodFilm',
   genre: foodGenre,
   products: foodFilmProducts,
+  hiddenForeign: true, // 日本語以外ではページ自体を非公開
 };
 
 export const liquidFilmCategory: CategoryDef = {

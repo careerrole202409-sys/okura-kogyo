@@ -27,11 +27,25 @@ export default function CategoryPage({ category }: Props) {
   const title = t(category.titleKey);
   const genre = category.genre;
   const genreLabel = t(genre.labelKey);
+  // 日本語以外で非公開指定のカテゴリはページ自体を「見つかりません」扱いにする
+  const hidden = !!category.hiddenForeign && lang !== 'ja';
 
   useEffect(() => {
+    if (hidden) return;
     document.title = `${title} - ${t('common.products')} | 大倉工業株式会社`;
     document.body.className = `archive tax-products_cat ${category.term} ${lang}`;
-  }, [t, lang, title, category.term]);
+  }, [t, lang, title, category.term, hidden]);
+
+  if (hidden) {
+    return (
+      <main className="m-body products">
+        <div className="l-fix" style={{ padding: '4rem 0', textAlign: 'center' }}>
+          <p>{t('product.notFound')}</p>
+          <Link to="/products/use/display-film/">{t('product.backToList')}</Link>
+        </div>
+      </main>
+    );
+  }
 
   return (
     <main className="m-body products">
